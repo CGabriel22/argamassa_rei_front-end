@@ -1,0 +1,100 @@
+.modal {
+  width: 100%;
+  background-color: #fff;
+  border-radius: 24px 24px 0px 0px;
+  padding: 16px;
+  position: fixed;
+  bottom: 0;
+  z-index: 3;
+  margin-left: -16px;
+  text-align: center;
+}
+.modal.open {
+  animation: open-modal 0.3s ease;
+}
+.modal.close {
+  animation: close-modal 0.3s ease;
+}
+.modal .image-area {
+  width: 100%;
+  height: 108px;
+  border-radius: 4px;
+  background-color: #F5F5F5;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  overflow: hidden;
+  margin-right: 8px;
+}
+.modal .icon-button {
+  position: absolute;
+  right: 16px;
+}
+
+.product-info {
+  display: flex;
+}
+.product-info span {
+  margin-left: 4px;
+  margin-right: 4px;
+}
+
+@keyframes open-modal {
+  from {
+    transform: translateY(100%);
+  }
+  to {
+    transform: translateY(0%);
+  }
+}
+@keyframes close-modal {
+  from {
+    transform: translateY(0%);
+  }
+  to {
+    transform: translateY(100%);
+  }
+}
+.header {
+  width: 100%;
+  min-width: 308px;
+  z-index: 1;
+  padding: 24px 16px 0px 16px;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.15);
+  -o-position: fixed;
+  position: fixed;
+  top: 0px;
+  left: 0px;
+}
+.header-container {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  padding-bottom: 12px;
+}
+.header-container .title-container {
+  width: 100%;
+  max-width: 295px;
+}
+
+.title {
+  display: flex;
+  align-items: center;
+}
+.title h1 {
+  margin-right: 12px;
+}
+
+.tag {
+  padding: 4px 8px;
+  border-radius: 4px;
+}
+.tag .body {
+  line-height: 16px;
+}
+
+.content-container {
+  padding: 141px 16px 136px 16px;
+}
+
+/*# sourceMappingURL=catalogo.css.map */

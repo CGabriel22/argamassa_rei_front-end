@@ -1,0 +1,53 @@
+//importações
+@use 'assets/colors'
+@use 'assets/inputs'
+@use 'assets/buttons'
+@use 'assets/mixins'
+
+//gerais
+html, body
+  background-color: colors.$primary_variant
+
+main
+  padding: 74px 24px 0px 24px
+  width: 100%
+  .center-items
+    width: 100%
+    max-width: 366px
+    min-width: 280px
+    padding: 48px 0px
+    flex-direction: column-reverse
+
+//form
+form
+  width: 100%
+  display: flex
+  align-items: center
+  flex-direction: column
+  margin-top: 16px
+  .forms
+    margin-bottom: 16px
+
+footer
+  width: 100%
+  padding: 24px
+  .button
+    color: white
+    background: transparent
+
+.back-button
+  position: absolute
+  top: 16px
+  left: 12px
+
+@media only screen and (max-height: 600px)
+  main
+    padding: 24px 24px 0px 24px
+
+@media only screen and ( min-width: 768px )
+  main
+    padding: 74px 24px 0px 24px
+    .center-items
+      padding: 48px 16px 0px 16px
+    footer
+      position: relative

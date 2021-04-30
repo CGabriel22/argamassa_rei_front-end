@@ -1,0 +1,31 @@
+@use 'assets' as *
+
+html, body
+  background-color: $secondary_bg
+
+.center-items
+  display: flex
+  align-items: center
+  justify-content: center
+
+.center-items-horizontal
+  display: flex
+  justify-content: center
+
+.center-items-vertical
+  display: flex
+  align-items: center
+
+.card
+  background-color: $surface_color
+  border: 1px solid $stroke
+  padding: 8px
+  border-radius: 8px
+  &.list-card
+    padding: 0px
+
+.display-none
+  display: none!important
+
+.content-container
+  padding: 77px 16px 136px 16px

@@ -1,0 +1,29 @@
+@use 'colors'
+
+.button
+  padding: 8px 16px
+  border-radius: 4px
+  cursor: pointer
+
+.fab
+  padding: 16px
+  height: 56px
+  display: flex
+  justify-content: center
+  border-radius: 30px
+  box-shadow: 0px 32px 60px rgba(0, 0, 0, 0.07), 0px 22.3363px 13.4018px rgba(0, 0, 0, 0.06), 0px 6.6501px 3.99006px rgba(0, 0, 0, 0.04)
+  position: fixed
+  bottom: 80px
+  right: 18px
+  border: 1px solid colors.$stroke
+  & .button
+    padding: 0 8px 0 10px
+
+.icon-button
+  background: transparent
+  width: 40px
+  height: 40px
+  display: flex
+  align-items: center
+  justify-content: center
+  cursor: pointer

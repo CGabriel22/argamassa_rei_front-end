@@ -1,0 +1,48 @@
+@use 'colors'
+
+.modal
+  width: 100%
+  background-color: #fff
+  border-radius: 24px 24px 0px 0px
+  padding: 16px
+  position: fixed
+  bottom: 0
+  z-index: 3
+  margin-left: -16px
+  text-align: center
+  &.open
+    animation: open-modal 0.3s ease
+  &.close
+    animation: close-modal 0.3s ease
+
+  .image-area
+    width: 100%
+    height: 108px
+    border-radius: 4px
+    background-color: colors.$primary_bg
+    display: flex
+    justify-content: center
+    align-items: center
+    overflow: hidden
+    margin-right: 8px
+  .icon-button
+    position: absolute
+    right: 16px
+
+.product-info
+  display: flex
+  span
+    margin-left: 4px
+    margin-right: 4px
+
+@keyframes open-modal
+  from
+    transform: translateY(100%)
+  to
+    transform: translateY(0%)
+
+@keyframes close-modal
+  from
+    transform: translateY(0%)
+  to
+    transform: translateY(100%)

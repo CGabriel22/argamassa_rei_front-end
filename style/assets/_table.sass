@@ -1,0 +1,19 @@
+@use 'colors'
+
+.table
+  border-collapse: collapse
+  width: 100%
+  td
+    text-align: left
+    padding: 8px 16px
+  td:last-of-type
+    text-align: right
+  tr
+    background-color: colors.$surface_color
+    border-top: 1px solid colors.$stroke
+
+  tr:last-of-type
+    border-bottom: 1px solid colors.$stroke
+
+  tr:nth-child(even)
+    background-color: colors.$primary_bg

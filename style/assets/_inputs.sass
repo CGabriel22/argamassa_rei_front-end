@@ -1,0 +1,75 @@
+@use 'colors'
+@use 'mixins'
+
+.forms
+  width: 100%
+  position: relative
+  height: 56px
+  overflow: hidden
+
+.forms input
+  width: 100%
+  height: 100%
+  font-family: 'Roboto', sans-serif
+  font-size: 16px
+  line-height: 24px
+  padding: 23px 16px 9px 16px
+  border-radius: 4px 4px 0 0
+
+.forms .label-name
+  position: absolute
+  bottom: 0px
+  left: 0%
+  width: 100%
+  height: 100%
+  pointer-events: none
+  border-bottom: 1px solid rgba(255, 255, 255, 0.15)
+
+.forms.desactive .label-name
+  border-bottom: 1px solid rgba(0, 0, 0, 0.15)
+
+.forms.active .label-name
+  border-bottom: 1px solid rgba(0, 0, 0, 0.15)
+
+.content-name
+  position: absolute
+  bottom: 16px
+  left: 16px
+  @include mixins.prefix(transition, all 0.3s ease-out, o)
+
+.forms .label-name::after
+  content: ""
+  position: absolute
+  left: 0px
+  bottom: -1px
+  width: 100%
+  height: 100%
+  border-bottom: 1px solid colors.$tertiary_color
+  @include mixins.prefix(transform, translateX(-100%), o)
+  @include mixins.prefix(transition, all 0.3s ease-out, o)
+
+.forms.desactive .label-name::after
+  border-bottom: 1px solid rgba(0, 0, 0, 0.15)
+
+.forms.active .label-name::after
+  border-bottom: 1px solid rgba(41, 54, 48, 1)
+
+.forms.error .label-name::after
+  border-bottom: 1px solid colors.$light_error
+
+.forms.error
+  color: colors.$light_error
+  input
+    color: colors.$light_error
+
+.forms input:focus + .label-name .content-name,
+.forms input:valid + .label-name .content-name
+  @include mixins.prefix(transform, translateY(-100%), o)
+  font-size: 10px
+  line-height: 14px
+  text-transform: uppercase
+
+.forms input:focus + .label-name::after,
+.forms input:valid + .label-name::after
+  transform: translateX(0%)
+  @include mixins.prefix(transform, translateX(0%), o)

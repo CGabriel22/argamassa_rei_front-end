@@ -1,0 +1,50 @@
+.header {
+  width: 100%;
+  min-width: 308px;
+  z-index: 1;
+  padding: 24px 16px 0px 16px;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.15);
+  -o-position: fixed;
+  position: fixed;
+  top: 0px;
+  left: 0px;
+}
+.header-container {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  padding-bottom: 12px;
+}
+.header-container .title-container {
+  width: 100%;
+  max-width: 295px;
+}
+
+.title {
+  display: flex;
+  align-items: center;
+}
+.title h1 {
+  margin-right: 12px;
+}
+
+.tag {
+  padding: 4px 8px;
+  border-radius: 4px;
+}
+.tag .body {
+  line-height: 16px;
+}
+
+.content-container {
+  padding: 93px 16px 136px 16px;
+}
+
+.home-button {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+}
+
+/*# sourceMappingURL=home.css.map */
