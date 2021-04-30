@@ -10,10 +10,10 @@
   z-index: 3
   margin-left: -16px
   text-align: center
+  transform: translateY(100%)
+  transition: all .4s ease
   &.open
-    animation: open-modal 0.3s ease
-  &.close
-    animation: close-modal 0.3s ease
+    transform: translateY(0%)
 
   .image-area
     width: 100%

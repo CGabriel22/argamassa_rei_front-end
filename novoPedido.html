@@ -21,12 +21,12 @@
   <link href="https://fonts.googleapis.com/css?family=Material+Icons|Material+Icons+Round&display=swap"
     rel="stylesheet">
   <!-- titulo da página -->
-  <title>Bem vindo(a) - Argamassa Rei PDV</title>
+  <title>Novo pedido - Argamassa Rei PDV</title>
   <!-- favicon -->
   <link rel="shortcut icon" href="img/favicon.svg" type="image/x-icon">
   <!-- estilos -->
   <link rel="stylesheet" href="css/style.css">
-  <link rel="stylesheet" href="css/home.css">
+  <link rel="stylesheet" href="css/clientes.css">
 </head>
 
 <body>
@@ -39,18 +39,20 @@
       <div class="title-container">
         <!--inicio do title container-->
         <div class="title">
-          <h1 class="h4 primary-color">Argamassa Rei</h1>
+          <a href="home.html" class="icon-button mr-12">
+            <span class="material-icons-round primary-color">arrow_back</span>
+          </a>
+          <h1 class="h4 primary-color">Clientes</h1>
           <!--title text-->
-          <div class="tag bg-primary-2">
-            <!--tag-->
-            <p class="body bold secondary-color">PDV</p>
-          </div>
-          <!--fim da tag-->
         </div>
         <!--fim do title-->
 
       </div>
       <!--fim do title container-->
+
+      <button class="icon-button">
+        <span class="material-icons-round primary-color">search</span>
+      </button>
 
       <nav class="nav display-none">
         <!--inicio da nav-->
@@ -100,27 +102,68 @@
   <div class="content-container bg-2">
     <!--área de conteúdos-->
 
-    <a href="novoPedido.html" style="width: 100%;padding: 46px 0px;" class="button home-button white-color bg-primary">
-      <span class="material-icons-round">add_circle_outline</span>
-      <p style="font-weight: 700;">novo pedido</p>
-    </a>
+    <h2 class="body-3 medium-color mb-16">Selecione o seu cliente</h2>
 
-    <h2 class="h6 medium-color mt-16 mb-16">Ações rápidas</h2>
+    <div class="px-16 mb-8 black-color">
+      <!--indicador de ordem-->
+      <p class="body medium-color">A</p>
+    </div>
+    <!--fim do indicador de ordem-->
 
-    <a href="novoClienteDados.html" style="padding: 16px 0px;background-color: rgba(73, 130, 242, 1);"
-      class="button home-button white-color mb-8">
-      <span class="material-icons-round">person_add</span>
-      <p style="font-weight: 700;">Novo cliente</p>
-    </a>
+    <div class="card list-card mb-8 black-color">
+      <!--card de listas-->
+      <a href="confirmarDados.html" class="client-list black-color">
+        <!--item da lista-->
+        <p class="body-2">Armazém casa e construção</p> <span class="material-icons-round">keyboard_arrow_right</span>
+      </a>
+      <a href="confirmarDados.html" class="client-list black-color">
+        <!--item da lista-->
+        <p class="body-2">Armazém JP</p> <span class="material-icons-round">keyboard_arrow_right</span>
+      </a>
+      <a href="confirmarDados.html" class="client-list black-color">
+        <!--item da lista-->
+        <p class="body-2">Armazém Trindade</p> <span class="material-icons-round">keyboard_arrow_right</span>
+      </a>
+    </div>
+    <!--fim do card de listas-->
 
-    <a href="minhasVendas.html" style="padding: 16px 0px;background-color: rgba(227, 175, 41, 1);"
-      class="button home-button white-color mb-8">
-      <span class="material-icons-round">point_of_sale</span>
-      <p style="font-weight: 700;">minhas vendas</p>
-    </a>
+    <div class="px-16 mb-8 black-color">
+      <!--indicador de ordem-->
+      <p class="body medium-color">B</p>
+    </div>
+    <!--fim do indicador de ordem-->
 
-    <!--fim área de conteúdos-->
+    <div class="card list-card mb-8 black-color">
+      <!--card de listas-->
+      <a href="confirmarDados.html" class="client-list black-color">
+        <!--item da lista-->
+        <p class="body-2">Barraca do irmão beto</p> <span class="material-icons-round">keyboard_arrow_right</span>
+      </a>
+      <a href="confirmarDados.html" class="client-list black-color">
+        <!--item da lista-->
+        <p class="body-2">Bianco construções</p> <span class="material-icons-round">keyboard_arrow_right</span>
+      </a>
+    </div>
+    <!--fim do card de listas-->
+
+    <div class="px-16 mb-8 black-color">
+      <!--indicador de ordem-->
+      <p class="body medium-color">I</p>
+    </div>
+    <!--fim do indicador de ordem-->
+
+    <div class="card list-card mb-8 black-color">
+      <!--card de listas-->
+      <a href="confirmarDados.html" class="client-list black-color">
+        <!--item da lista-->
+        <p class="body-2">Ingrid Maria da Silva</p> <span class="material-icons-round">keyboard_arrow_right</span>
+      </a>
+    </div>
+    <!--fim do card de listas-->
+
+
   </div>
+  <!--fim da área de conteúdos-->
 
 
   <nav class="nav">
@@ -130,7 +173,7 @@
       <ul>
         <li>
           <!--Home-->
-          <a href="home.html" class="active">
+          <a href="home.html">
             <span class="material-icons-round">home</span>
             <p>Home</p>
           </a>
@@ -144,7 +187,7 @@
         </li>
         <li>
           <!--Clientes-->
-          <a href="clientes.html">
+          <a href="clientes.html" class="active">
             <span class="material-icons-round">person_pin</span>
             <p>Clientes</p>
           </a>

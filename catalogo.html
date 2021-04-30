@@ -31,6 +31,8 @@
 
 <body>
 
+  <div class="black-screen" onclick="closeModal()"></div>
+
   <header class="header bg-white">
     <!--inicio do header-->
     <div class="header-container">
@@ -122,7 +124,7 @@
       <!--área principal do catalogo content-->
 
       <!-- inicio do card de produtos -->
-      <div class="product-card mb-8">
+      <div class="product-card mb-8" onclick="openModal()">
         <div class="image-area">
           <p class="low-color">imagem</p>
         </div>
@@ -147,7 +149,7 @@
       <!-- fim do card de produtos -->
 
       <!-- inicio do card de produtos -->
-      <div class="product-card mb-8">
+      <div class="product-card mb-8" onclick="openModal()">
         <div class="image-area" style="background-color: rgba(235, 35, 59, 1);">
 
         </div>
@@ -175,7 +177,7 @@
     </div>
     <!--fim da área principal do catalogo content-->
 
-    <div class="modal display-none">
+    <div class="modal">
 
       <button class="icon-button" onclick="closeModal()">
         <span class="material-icons-round medium-color">close</span>
@@ -239,6 +241,22 @@
     </div>
     <!--fim do nav container-->
   </nav>
+
+  <script>
+    function openModal() {
+      document.querySelector('.modal').classList.add('open');
+      document.querySelector('.black-screen').classList.add('fade-in');
+    }
+    function closeModal() {
+      document.querySelector('.modal').classList.remove('open');
+      document.querySelector('.black-screen').classList.remove('fade-in');
+      document.querySelector('.black-screen').classList.add('fade-out');
+      setTimeout(() => {
+        document.querySelector('.black-screen').classList.remove('fade-out');
+      }, 400);
+
+    }
+  </script>
 
 
 </body>

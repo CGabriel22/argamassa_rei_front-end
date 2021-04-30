@@ -21,12 +21,12 @@
   <link href="https://fonts.googleapis.com/css?family=Material+Icons|Material+Icons+Round&display=swap"
     rel="stylesheet">
   <!-- titulo da página -->
-  <title>Bem vindo(a) - Argamassa Rei PDV</title>
+  <title>pedido - Argamassa Rei PDV</title>
   <!-- favicon -->
   <link rel="shortcut icon" href="img/favicon.svg" type="image/x-icon">
   <!-- estilos -->
   <link rel="stylesheet" href="css/style.css">
-  <link rel="stylesheet" href="css/home.css">
+  <link rel="stylesheet" href="css/perfil.css">
 </head>
 
 <body>
@@ -39,18 +39,25 @@
       <div class="title-container">
         <!--inicio do title container-->
         <div class="title">
-          <h1 class="h4 primary-color">Argamassa Rei</h1>
+          <a href="minhasVendas.html" class="icon-button mr-12">
+            <span class="material-icons-round primary-color">arrow_back</span>
+          </a>
+          <h1 class="h4 primary-color">Pedido</h1>
           <!--title text-->
-          <div class="tag bg-primary-2">
-            <!--tag-->
-            <p class="body bold secondary-color">PDV</p>
-          </div>
-          <!--fim da tag-->
         </div>
         <!--fim do title-->
 
       </div>
       <!--fim do title container-->
+
+      <div style="display: flex;">
+        <button class="icon-button mr-8">
+          <span class="material-icons-round primary-color">share</span>
+        </button>
+        <button class="icon-button">
+          <span class="material-icons-round primary-color">print</span>
+        </button>
+      </div>
 
       <nav class="nav display-none">
         <!--inicio da nav-->
@@ -97,31 +104,103 @@
   </header>
   <!--fim do header-->
 
-  <div class="content-container bg-2">
+  <div class="content-container-minhasVendas bg-2">
     <!--área de conteúdos-->
 
-    <a href="novoPedido.html" style="width: 100%;padding: 46px 0px;" class="button home-button white-color bg-primary">
-      <span class="material-icons-round">add_circle_outline</span>
-      <p style="font-weight: 700;">novo pedido</p>
-    </a>
+    <div class="title-area mb-16">
+      <h2 class="h5 black-color">Armazém JP</h2>
+      <h3 class="subtitle medium-color"># 2502 • 23/03/2021</h3>
+    </div>
 
-    <h2 class="h6 medium-color mt-16 mb-16">Ações rápidas</h2>
+    <!-- inicio do card de produtos -->
+    <div class="product-card mb-8">
+      <div class="image-area">
+        <p class="low-color">imagem</p>
+      </div>
 
-    <a href="novoClienteDados.html" style="padding: 16px 0px;background-color: rgba(73, 130, 242, 1);"
-      class="button home-button white-color mb-8">
-      <span class="material-icons-round">person_add</span>
-      <p style="font-weight: 700;">Novo cliente</p>
-    </a>
+      <div class="product-content">
+        <div class="text-container">
+          <div class="line-one">
+            <p class="body-3 black-color">1 ‣ argamassa rei acl</p>
+          </div>
+          <div class="line-two body-2 medium-color">
+            <p>saco</p>
+            <p>‣</p>
+            <p>20kg</p>
+          </div>
+        </div>
+        <div class="price-container">
+          <p class="body-3 primary-color">R$ 5,45</p>
+          <p class="body-2 medium-color line-through">R$ 6,70</p>
+        </div>
+      </div>
+    </div>
+    <!-- fim do card de produtos -->
 
-    <a href="minhasVendas.html" style="padding: 16px 0px;background-color: rgba(227, 175, 41, 1);"
-      class="button home-button white-color mb-8">
-      <span class="material-icons-round">point_of_sale</span>
-      <p style="font-weight: 700;">minhas vendas</p>
-    </a>
+    <!-- inicio do card de produtos -->
+    <div class="product-card mb-8">
+      <div class="image-area">
+        <p class="low-color">imagem</p>
+      </div>
+
+      <div class="product-content">
+        <div class="text-container">
+          <div class="line-one">
+            <p class="body-3 black-color">1 ‣ argamassa rei acl</p>
+          </div>
+          <div class="line-two body-2 medium-color">
+            <p>saco</p>
+            <p>‣</p>
+            <p>20kg</p>
+          </div>
+        </div>
+        <div class="price-container">
+          <p class="body-3 primary-color">R$ 5,45</p>
+          <p class="body-2 medium-color line-through">R$ 6,70</p>
+        </div>
+      </div>
+    </div>
+    <!-- fim do card de produtos -->
+
+    <!-- inicio do card de produtos -->
+    <div class="product-card mb-8">
+      <div class="image-area">
+        <p class="low-color">imagem</p>
+      </div>
+
+      <div class="product-content">
+        <div class="text-container">
+          <div class="line-one">
+            <p class="body-3 black-color">1 ‣ argamassa rei acl</p>
+          </div>
+          <div class="line-two body-2 medium-color">
+            <p>saco</p>
+            <p>‣</p>
+            <p>20kg</p>
+          </div>
+        </div>
+        <div class="price-container">
+          <p class="body-3 primary-color">R$ 5,45</p>
+          <p class="body-2 medium-color line-through">R$ 6,70</p>
+        </div>
+      </div>
+    </div>
+    <!-- fim do card de produtos -->
+
+    <footer class="mt-16">
+      <div class="discount-container display-flex justify-between">
+        <p class="body medium-color">Desconto</p>
+        <p class="body medium-color">R$ 1,25</p>
+      </div>
+
+      <div class="total-container display-flex justify-between">
+        <p class="body-2 black-color">Valor total</p>
+        <p class="h5 bold black-color">R$ 5,45</p>
+      </div>
+    </footer>
 
     <!--fim área de conteúdos-->
   </div>
-
 
   <nav class="nav">
     <!--inicio da nav-->
@@ -130,7 +209,7 @@
       <ul>
         <li>
           <!--Home-->
-          <a href="home.html" class="active">
+          <a href="home.html">
             <span class="material-icons-round">home</span>
             <p>Home</p>
           </a>
@@ -151,7 +230,7 @@
         </li>
         <li>
           <!--Perfil-->
-          <a href="perfil.html">
+          <a href="perfil.html" class="active">
             <span class="material-icons-round">person</span>
             <p>Perfil</p>
           </a>
@@ -160,7 +239,6 @@
     </div>
     <!--fim do nav container-->
   </nav>
-
 
 </body>
 

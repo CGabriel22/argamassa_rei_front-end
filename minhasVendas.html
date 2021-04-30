@@ -123,7 +123,7 @@
   </div>
 
   <table class="table">
-    <tr>
+    <tr class="pedido">
       <td>
         <p class="subtitle medium-color"># 2502</p>
         <p class="subtitle primary-color">Ingrid Maria Silva</p>
@@ -134,7 +134,7 @@
       </td>
     </tr>
 
-    <tr>
+    <tr class="pedido">
       <td>
         <p class="subtitle medium-color"># 2502</p>
         <p class="subtitle primary-color">Ingrid Maria Silva</p>
@@ -145,7 +145,7 @@
       </td>
     </tr>
 
-    <tr>
+    <tr class="pedido">
       <td>
         <p class="subtitle medium-color"># 2502</p>
         <p class="subtitle primary-color">Ingrid Maria Silva</p>
@@ -156,7 +156,7 @@
       </td>
     </tr>
 
-    <tr>
+    <tr class="pedido">
       <td>
         <p class="subtitle medium-color"># 2502</p>
         <p class="subtitle primary-color">Ingrid Maria Silva</p>
@@ -230,6 +230,12 @@
         document.querySelector('.calendar-container').classList.remove('open');
       }
 
+    });
+
+    document.querySelectorAll('.pedido').forEach(p => {
+      p.addEventListener('click', e => {
+        window.location.href = 'pedido.html';
+      });
     });
 
   </script>
