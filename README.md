@@ -47,6 +47,15 @@ clonando projeto:
 
 ```
 
+instalando o sass(necessita de node instalado):
+<a href="https://nodejs.org/en/">link para download do node</a>
+
+```bash
+
+  npm install -g sass
+
+```
+
 rodando o sass:
 
 ```bash
