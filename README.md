@@ -53,6 +53,8 @@ instalando o sass(necessita de node instalado):
 ```bash
 
   npm install -g sass
+  
+  sass --version
 
 ```
 
