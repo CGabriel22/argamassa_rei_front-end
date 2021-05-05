@@ -27,6 +27,7 @@
   <!-- estilos -->
   <link rel="stylesheet" href="css/style.css">
   <link rel="stylesheet" href="css/home.css">
+  <link rel="stylesheet" href="css/calendar.css">
 </head>
 
 <body>
@@ -52,35 +53,35 @@
       </div>
       <!--fim do title container-->
 
-      <nav class="nav display-none">
+      <nav class="nav desktop-nav">
         <!--inicio da nav-->
-        <div class="nav-container bg-primary">
+        <div class="nav-container">
           <!--inicio do nav container-->
           <ul>
             <li>
               <!--Home-->
-              <a href="homeContent.html" name="0" class="active">
+              <a href="home.html" name="0" class="active">
                 <span class="material-icons-round">home</span>
                 <p>Home</p>
               </a>
             </li>
             <li>
               <!--Catálogo-->
-              <a href="catalogoContent.html" name="1">
+              <a href="catalogo.html" name="1" class="">
                 <span class="material-icons-round">dashboard</span>
                 <p>Catálogo</p>
               </a>
             </li>
             <li>
               <!--Clientes-->
-              <a href="clientesContent.html" name="2">
+              <a href="clientes.html" name="2" class="">
                 <span class="material-icons-round">person_pin</span>
                 <p>Clientes</p>
               </a>
             </li>
             <li>
               <!--Perfil-->
-              <a href="perfilContent.html" name="3">
+              <a href="perfil.html" name="3" class="">
                 <span class="material-icons-round">person</span>
                 <p>Perfil</p>
               </a>
@@ -105,7 +106,7 @@
       <p style="font-weight: 700;">novo pedido</p>
     </a>
 
-    <h2 class="h6 medium-color mt-16 mb-16">Ações rápidas</h2>
+    <h2 class="h6 medium-color mt-16 mb-16 no-desktop">Ações rápidas</h2>
 
     <a href="novoClienteDados.html" style="padding: 16px 0px;background-color: rgba(73, 130, 242, 1);"
       class="button home-button white-color mb-8">
@@ -114,13 +115,127 @@
     </a>
 
     <a href="minhasVendas.html" style="padding: 16px 0px;background-color: rgba(227, 175, 41, 1);"
-      class="button home-button white-color mb-8">
+      class="button home-button white-color mb-8 no-desktop">
       <span class="material-icons-round">point_of_sale</span>
       <p style="font-weight: 700;">minhas vendas</p>
     </a>
 
     <!--fim área de conteúdos-->
   </div>
+
+  <section class="vendas-table-container display-none">
+
+    <div class="vendas-table-area">
+
+      <header class="display-flex justify-between">
+        <h2 class="h5 medium-color">Minhas vendas</h2>
+
+        <div class="display-flex">
+
+          <button class="icon-button openCalendarButton mr-12">
+            <span class="material-icons-round primary-color">calendar_today</span>
+          </button>
+
+          <div class="search-bar">
+
+            <button class="icon-button">
+              <span class="material-icons-round medium-color">search</span>
+            </button>
+
+            <input type="text" class="medium-color body-2" placeholder="Procurando um cliente?">
+
+          </div>
+
+        </div>
+      </header>
+
+      <div class="calendar-container">
+        <div id="calendar"></div>
+        <form action="" class="display-none">
+          <input type="text" id="dateByCalendar1">
+          <input type="text" id="dateByCalendar2">
+        </form>
+      </div>
+
+      <table class="table">
+        <thead>
+          <tr class="bg">
+            <td>Código</td>
+            <td>Data</td>
+            <td>Cliente</td>
+            <td style="padding-right: 112px;">Valor total</td>
+          </tr>
+        </thead>
+
+        <tbody>
+          <tr class="pedido">
+            <td># 2502</td>
+            <td>23/03/2021</td>
+            <td>Ingrid Maria Silva</td>
+            <td>
+              R$ 753,00
+              <a href="#" class="ml-32 primary-color underline">ver mais</a>
+            </td>
+          </tr>
+
+          <tr class="pedido">
+            <td># 2502</td>
+            <td>23/03/2021</td>
+            <td>Ingrid Maria Silva</td>
+            <td>
+              R$ 1753,00
+              <a href="#" class="ml-32 primary-color underline">ver mais</a>
+            </td>
+          </tr>
+
+          <tr class="pedido">
+            <td># 2502</td>
+            <td>23/03/2021</td>
+            <td>Ingrid Maria Silva</td>
+            <td>
+              R$ 753,00
+              <a href="#" class="ml-32 primary-color underline">ver mais</a>
+            </td>
+          </tr>
+
+          <tr class="pedido">
+            <td># 2502</td>
+            <td>23/03/2021</td>
+            <td>Ingrid Maria Silva</td>
+            <td>
+              R$ 1753,00
+              <a href="#" class="ml-32 primary-color underline">ver mais</a>
+            </td>
+          </tr>
+
+          <tr class="pedido">
+            <td># 2502</td>
+            <td>23/03/2021</td>
+            <td>Ingrid Maria Silva</td>
+            <td>
+              R$ 1753,00
+              <a href="#" class="ml-32 primary-color underline">ver mais</a>
+            </td>
+          </tr>
+
+          <tr class="pedido">
+            <td># 2502</td>
+            <td>23/03/2021</td>
+            <td>Ingrid Maria Silva</td>
+            <td>
+              R$ 753,00
+              <a href="#" class="ml-32 primary-color underline">ver mais</a>
+            </td>
+          </tr>
+
+
+        </tbody>
+
+      </table>
+
+    </div>
+
+  </section>
 
 
   <nav class="nav">
@@ -161,6 +276,32 @@
     <!--fim do nav container-->
   </nav>
 
+  <script src="js/calendar.js"></script>
+  <script>
+
+    function closeCalendar() {
+      document.querySelector('.calendar-container').classList.remove('open');
+    }
+
+    function submitCalendar() {
+      alert(`filtrar de ${document.querySelector('#dateByCalendar1').value} até ${document.querySelector('#dateByCalendar2').value}`);
+    }
+
+    ConstructCalendar();
+    initCalendar();
+    ifCancel(closeCalendar);
+    ifOk(submitCalendar);
+
+    document.querySelector('.openCalendarButton').addEventListener('click', e => {
+      if (!document.querySelector('.calendar-container').matches('.open')) {
+        document.querySelector('.calendar-container').classList.add('open');
+      } else {
+        document.querySelector('.calendar-container').classList.remove('open');
+      }
+
+    });
+
+  </script>
 
 </body>
 

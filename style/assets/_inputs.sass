@@ -73,3 +73,27 @@
 .forms input:valid + .label-name::after
   transform: translateX(0%)
   @include mixins.prefix(transform, translateX(0%), o)
+
+.quantity-selector
+  height: 40px
+  border: 1px solid colors.$stroke
+  border-radius: 4px
+  position: relative
+  overflow: hidden
+  width: 50%
+  text-align: center
+  font-size: 16px
+  .less-number
+    position: absolute
+    left: 0px
+    top: 0px
+  .plus-number
+    position: absolute
+    top: 0px
+    right: 0px
+  input
+    height: 100%
+    width: 100%
+    padding: 0px 40px
+    text-align: center
+    font-size: 16px

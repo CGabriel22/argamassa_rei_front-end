@@ -39,5 +39,63 @@ html, body
 .justify-between
   justify-content: space-between
 
+.align-center
+  align-items: center
+
 .content-container
   padding: 77px 16px 136px 16px
+
+input[type='radio']
+  position: relative
+
+input[type='radio']:after
+  width: 22px
+  height: 22px
+  top: -1px
+  left: -1px
+  border-radius: 15px
+  position: relative
+  background-color: white
+  content: ""
+  display: inline-block
+  visibility: visible
+  border: 2px solid rgba(50, 50, 50, 1)
+
+input[type='radio']:checked:before
+  width: 26px
+  height: 26px
+  top: -3px
+  left: -3px
+  border-radius: 15px
+  position: absolute
+  background-color: rgba(50, 50, 50, 1)
+  content: ''
+  display: inline-block
+  visibility: visible
+  border: 2px solid white
+
+input[type='radio']:checked:after
+  width: 18px
+  height: 18px
+  top: 1px
+  left: 1px
+  border-radius: 15px
+  position: relative
+  background-color: #323232
+  content: ""
+  display: inline-block
+  visibility: visible
+  border: 3px solid white
+
+.only-desktop
+  display: none!important
+
+@media only screen and ( min-width: 768px )
+  .header
+    padding: 16px 48px 0px 48px!important
+  .nav
+    display: none
+  .no-desktop
+    display: none!important
+  .only-desktop
+    display: flex!important

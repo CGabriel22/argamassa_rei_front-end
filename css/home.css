@@ -1,3 +1,62 @@
+.table {
+  border-collapse: collapse;
+  width: 100%;
+}
+.table td {
+  text-align: left;
+  padding: 8px 16px;
+}
+.table td:last-of-type {
+  text-align: right;
+}
+.table tr {
+  background-color: #FFFFFF;
+  border-top: 1px solid rgba(0, 0, 0, 0.15);
+}
+.table tr:last-of-type {
+  border-bottom: 1px solid rgba(0, 0, 0, 0.15);
+}
+.table tr:nth-child(even) {
+  background-color: #F5F5F5;
+}
+
+.vendas-table-area {
+  background-color: #FFFFFF;
+  border: 1px solid rgba(0, 0, 0, 0.15);
+  border-radius: 12px;
+}
+.vendas-table-area header {
+  padding: 20px 16px;
+  align-items: center;
+}
+.vendas-table-area thead td {
+  padding: 16px;
+  color: rgba(0, 0, 0, 0.87);
+  font-weight: 500;
+}
+.vendas-table-area tbody td {
+  padding: 14px;
+  color: rgba(0, 0, 0, 0.6);
+}
+.vendas-table-area tr:nth-child(even) {
+  background-color: white;
+}
+
+.search-bar {
+  background-color: #FFFFFF;
+  border: 1px solid rgba(0, 0, 0, 0.15);
+  border-radius: 20px;
+  width: 288px;
+  height: 40px;
+  overflow: hidden;
+  display: flex;
+  align-items: center;
+}
+.search-bar input {
+  height: 100%;
+  width: 82%;
+}
+
 .header {
   width: 100%;
   min-width: 308px;
@@ -44,7 +103,48 @@
   display: flex;
   flex-direction: column;
   align-items: center;
+  justify-content: center;
   width: 100%;
+}
+
+@media only screen and (min-width: 768px) {
+  .vendas-table-container {
+    display: block !important;
+    padding: 0px 48px 60px 48px;
+  }
+
+  .content-container {
+    display: flex;
+    padding: 93px 48px 16px 48px;
+  }
+
+  .home-button {
+    height: 80px;
+    padding: 0px !important;
+  }
+
+  .home-button:first-of-type {
+    margin-right: 16px;
+  }
+
+  .calendar-container {
+    width: 100%;
+    max-width: 360px;
+    border-radius: 8px;
+    border: 1px solid rgba(0, 0, 0, 0.15);
+    overflow: hidden;
+    position: absolute;
+    top: 260px;
+    right: 364px;
+    transition: all 0.4s ease;
+    display: none;
+  }
+  .calendar-container.open {
+    display: block;
+  }
+  .calendar-container footer {
+    border-bottom: none !important;
+  }
 }
 
 /*# sourceMappingURL=home.css.map */

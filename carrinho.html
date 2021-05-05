@@ -21,12 +21,12 @@
   <link href="https://fonts.googleapis.com/css?family=Material+Icons|Material+Icons+Round&display=swap"
     rel="stylesheet">
   <!-- titulo da página -->
-  <title>Novo pedido - Argamassa Rei PDV</title>
+  <title>carrinho - Argamassa Rei PDV</title>
   <!-- favicon -->
   <link rel="shortcut icon" href="img/favicon.svg" type="image/x-icon">
   <!-- estilos -->
   <link rel="stylesheet" href="css/style.css">
-  <link rel="stylesheet" href="css/clientes.css">
+  <link rel="stylesheet" href="css/perfil.css">
 </head>
 
 <body>
@@ -39,20 +39,16 @@
       <div class="title-container">
         <!--inicio do title container-->
         <div class="title">
-          <a href="home.html" class="icon-button mr-12">
+          <a href="escolherProduto.html" class="icon-button mr-12">
             <span class="material-icons-round primary-color">arrow_back</span>
           </a>
-          <h1 class="h4 primary-color">Clientes</h1>
+          <h1 class="h4 primary-color">Carrinho</h1>
           <!--title text-->
         </div>
         <!--fim do title-->
 
       </div>
       <!--fim do title container-->
-
-      <button class="icon-button">
-        <span class="material-icons-round primary-color">search</span>
-      </button>
 
       <nav class="nav display-none">
         <!--inicio da nav-->
@@ -99,74 +95,88 @@
   </header>
   <!--fim do header-->
 
-  <div class="content-container bg-2">
+  <div class="content-container-minhasVendas bg-2">
     <!--área de conteúdos-->
 
-    <h2 class="body-3 medium-color mb-16">Selecione o seu cliente</h2>
-
-    <div class="px-16 mb-8 black-color">
-      <!--indicador de ordem-->
-      <p class="body medium-color">A</p>
+    <div class="title-area mb-16">
+      <h2 class="h5 black-color">Armazém JP</h2>
+      <h3 class="subtitle medium-color"># 2502 • 23/03/2021</h3>
     </div>
-    <!--fim do indicador de ordem-->
 
-    <div class="card list-card mb-8 black-color">
-      <!--card de listas-->
-      <a href="confirmarDados.html" class="client-list black-color">
-        <!--item da lista-->
-        <p class="body-2">Armazém casa e construção</p> <span class="material-icons-round">keyboard_arrow_right</span>
-      </a>
-      <a href="confirmarDados.html" class="client-list black-color">
-        <!--item da lista-->
-        <p class="body-2">Armazém JP</p> <span class="material-icons-round">keyboard_arrow_right</span>
-      </a>
-      <a href="confirmarDados.html" class="client-list black-color">
-        <!--item da lista-->
-        <p class="body-2">Armazém Trindade</p> <span class="material-icons-round">keyboard_arrow_right</span>
-      </a>
+    <!-- inicio do card de produtos -->
+    <div class="product-card mb-8">
+      <div class="image-area">
+        <p class="low-color">imagem</p>
+      </div>
+
+      <div class="product-content">
+        <div class="text-container">
+          <div class="line-one">
+            <p class="body-3 black-color">1 ‣ argamassa rei acl</p>
+          </div>
+          <div class="line-two body-2 medium-color">
+            <p>saco</p>
+            <p>‣</p>
+            <p>20kg</p>
+          </div>
+        </div>
+        <div class="price-container">
+          <p class="body-3 primary-color">R$ 5,45</p>
+          <p class="body-2 medium-color line-through">R$ 6,70</p>
+        </div>
+      </div>
     </div>
-    <!--fim do card de listas-->
+    <!-- fim do card de produtos -->
 
-    <div class="px-16 mb-8 black-color">
-      <!--indicador de ordem-->
-      <p class="body medium-color">B</p>
+    <!-- inicio do card de produtos -->
+    <div class="product-card mb-8">
+      <div class="image-area">
+        <p class="low-color">imagem</p>
+      </div>
+
+      <div class="product-content">
+        <div class="text-container">
+          <div class="line-one">
+            <p class="body-3 black-color">1 ‣ argamassa rei acl</p>
+          </div>
+          <div class="line-two body-2 medium-color">
+            <p>saco</p>
+            <p>‣</p>
+            <p>20kg</p>
+          </div>
+        </div>
+        <div class="price-container">
+          <p class="body-3 primary-color">R$ 5,45</p>
+          <p class="body-2 medium-color line-through">R$ 6,70</p>
+        </div>
+      </div>
     </div>
-    <!--fim do indicador de ordem-->
+    <!-- fim do card de produtos -->
 
-    <div class="card list-card mb-8 black-color">
-      <!--card de listas-->
-      <a href="confirmarDados.html" class="client-list black-color">
-        <!--item da lista-->
-        <p class="body-2">Barraca do irmão beto</p> <span class="material-icons-round">keyboard_arrow_right</span>
-      </a>
-      <a href="confirmarDados.html" class="client-list black-color">
-        <!--item da lista-->
-        <p class="body-2">Bianco construções</p> <span class="material-icons-round">keyboard_arrow_right</span>
-      </a>
-    </div>
-    <!--fim do card de listas-->
+    <footer class="mt-16">
+      <div class="discount-container display-flex justify-between">
+        <p class="body medium-color">Desconto</p>
+        <p class="body medium-color">R$ 1,25</p>
+      </div>
 
-    <div class="px-16 mb-8 black-color">
-      <!--indicador de ordem-->
-      <p class="body medium-color">I</p>
-    </div>
-    <!--fim do indicador de ordem-->
-
-    <div class="card list-card mb-8 black-color">
-      <!--card de listas-->
-      <a href="confirmarDados.html" class="client-list black-color">
-        <!--item da lista-->
-        <p class="body-2">Ingrid Maria da Silva</p> <span class="material-icons-round">keyboard_arrow_right</span>
-      </a>
-    </div>
-    <!--fim do card de listas-->
+      <div class="total-container display-flex justify-between">
+        <p class="body-2 black-color">Valor total</p>
+        <p class="h5 bold black-color">R$ 5,45</p>
+      </div>
+    </footer>
 
 
+
+    <!--fim área de conteúdos-->
   </div>
-  <!--fim da área de conteúdos-->
 
-
-
+  <div style="position: fixed;bottom: 8px;width: 100%; padding: 0px 16px;">
+    <a href="pagamento.html" style="width: 100%;display: flex;justify-content: center;" type="submit"
+      class="bg-primary white-color button mt-16">
+      <span class="material-icons-round mr-12">attach_money</span>
+      Finalizar pedido
+    </a>
+  </div>
 
 </body>
 

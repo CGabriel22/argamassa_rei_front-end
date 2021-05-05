@@ -21,7 +21,7 @@
   <link href="https://fonts.googleapis.com/css?family=Material+Icons|Material+Icons+Round&display=swap"
     rel="stylesheet">
   <!-- titulo da página -->
-  <title>Catálogo - Argamassa Rei PDV</title>
+  <title>Escolher produto - Argamassa Rei PDV</title>
   <!-- favicon -->
   <link rel="shortcut icon" href="img/favicon.svg" type="image/x-icon">
   <!-- estilos -->
@@ -40,58 +40,51 @@
 
       <div class="title-container">
         <!--inicio do title container-->
-        <div class="title no-desktop">
+        <div class="title">
+          <a href="confirmarDados.html" class="icon-button mr-12">
+            <span class="material-icons-round primary-color">arrow_back</span>
+          </a>
           <h1 class="h4 primary-color">Catálogo</h1>
           <!--title text-->
         </div>
         <!--fim do title-->
 
-        <div class="title only-desktop">
-          <h1 class="h4 primary-color">Argamassa Rei</h1>
-          <!--title text-->
-          <div class="tag bg-primary-2">
-            <!--tag-->
-            <p class="body bold secondary-color">PDV</p>
-          </div>
-          <!--fim da tag-->
-        </div>
-
       </div>
       <!--fim do title container-->
 
-      <button class="icon-button no-desktop">
+      <button class="icon-button">
         <span class="material-icons-round primary-color">search</span>
       </button>
 
-      <nav class="nav desktop-nav">
+      <nav class="nav display-none">
         <!--inicio da nav-->
-        <div class="nav-container">
+        <div class="nav-container bg-primary">
           <!--inicio do nav container-->
           <ul>
             <li>
               <!--Home-->
-              <a href="home.html" name="0" class="">
+              <a href="homeContent.html" name="0" class="active">
                 <span class="material-icons-round">home</span>
                 <p>Home</p>
               </a>
             </li>
             <li>
               <!--Catálogo-->
-              <a href="catalogo.html" name="1" class="active">
+              <a href="catalogoContent.html" name="1">
                 <span class="material-icons-round">dashboard</span>
                 <p>Catálogo</p>
               </a>
             </li>
             <li>
               <!--Clientes-->
-              <a href="clientes.html" name="2" class="">
+              <a href="clientesContent.html" name="2">
                 <span class="material-icons-round">person_pin</span>
                 <p>Clientes</p>
               </a>
             </li>
             <li>
               <!--Perfil-->
-              <a href="perfil.html" name="3" class="">
+              <a href="perfilContent.html" name="3">
                 <span class="material-icons-round">person</span>
                 <p>Perfil</p>
               </a>
@@ -105,7 +98,7 @@
     </div>
     <!--fim do header container-->
 
-    <div class="catalogo-nav no-desktop">
+    <div class="catalogo-nav">
       <!--inicio da navegação interior do catalogo-->
       <ul>
         <li><a href="catalogo.html?argamassas" class="active">Argamassas</a></li>
@@ -130,7 +123,7 @@
       </ul>
     </div>
 
-    <div class="catalogo-content-wrapper no-desktop">
+    <div class="catalogo-content-wrapper">
       <!--área principal do catalogo content-->
 
       <!-- inicio do card de produtos -->
@@ -183,116 +176,6 @@
       </div>
       <!-- fim do card de produtos -->
 
-      <!--cards de produtos-->
-    </div>
-    <!--fim da área principal do catalogo content-->
-
-    <div class="catalogo-content-wrapper only-desktop">
-      <!--área principal do catalogo content-->
-
-      <p class="body-2 medium-color mb-8">Argamassas</p>
-
-      <!-- inicio do card de produtos -->
-      <div class="product-card mb-8" onclick="openModal()">
-        <div class="image-area">
-          <p class="low-color">imagem</p>
-        </div>
-
-        <div class="product-content">
-          <div class="text-container">
-            <div class="line-one">
-              <p class="body-3 black-color">argamassa rei acl</p>
-            </div>
-            <div class="line-two body-2 medium-color">
-              <p>saco</p>
-              <p>‣</p>
-              <p>20kg</p>
-            </div>
-          </div>
-          <div class="price-container">
-            <p class="body-3 primary-color">R$ 5,45</p>
-            <p class="body-2 medium-color line-through">R$ 6,70</p>
-          </div>
-        </div>
-      </div>
-      <!-- fim do card de produtos -->
-
-      <!-- inicio do card de produtos -->
-      <div class="product-card mb-8" onclick="openModal()">
-        <div class="image-area" style="background-color: rgba(235, 35, 59, 1);">
-
-        </div>
-
-        <div class="product-content">
-          <div class="text-container">
-            <div class="line-one">
-              <p class="body-3 black-color">argamassa rei acl</p>
-            </div>
-            <div class="line-two body-2 medium-color">
-              <p>saco</p>
-              <p>‣</p>
-              <p>20kg</p>
-            </div>
-          </div>
-          <div class="price-container">
-            <p class="body-3 primary-color">R$ 5,45</p>
-            <p class="body-2 medium-color line-through">R$ 6,70</p>
-          </div>
-        </div>
-      </div>
-      <!-- fim do card de produtos -->
-
-      <!-- inicio do card de produtos -->
-      <div class="product-card mb-8" onclick="openModal()">
-        <div class="image-area" style="background-color: rgba(235, 35, 59, 1);">
-
-        </div>
-
-        <div class="product-content">
-          <div class="text-container">
-            <div class="line-one">
-              <p class="body-3 black-color">argamassa rei acl</p>
-            </div>
-            <div class="line-two body-2 medium-color">
-              <p>saco</p>
-              <p>‣</p>
-              <p>20kg</p>
-            </div>
-          </div>
-          <div class="price-container">
-            <p class="body-3 primary-color">R$ 5,45</p>
-            <p class="body-2 medium-color line-through">R$ 6,70</p>
-          </div>
-        </div>
-      </div>
-      <!-- fim do card de produtos -->
-
-      <!-- inicio do card de produtos -->
-      <div class="product-card mb-8" onclick="openModal()">
-        <div class="image-area" style="background-color: rgba(235, 35, 59, 1);">
-
-        </div>
-
-        <div class="product-content">
-          <div class="text-container">
-            <div class="line-one">
-              <p class="body-3 black-color">argamassa rei acl</p>
-            </div>
-            <div class="line-two body-2 medium-color">
-              <p>saco</p>
-              <p>‣</p>
-              <p>20kg</p>
-            </div>
-          </div>
-          <div class="price-container">
-            <p class="body-3 primary-color">R$ 5,45</p>
-            <p class="body-2 medium-color line-through">R$ 6,70</p>
-          </div>
-        </div>
-      </div>
-      <!-- fim do card de produtos -->
-
-      <div class="clear"></div>
       <!--cards de produtos-->
     </div>
     <!--fim da área principal do catalogo content-->
@@ -313,54 +196,49 @@
           <p>20kg</p>
         </div>
       </div>
-      <p class="body medium-color mt-16">
-        Argamassa ACI é indicada para aplicações internas, em pisos de alvenaria, ela tem ótima resistência e
-        durabilidada, melhor opção para a sua obra.
-      </p>
+
+      <div class="display-flex mt-16">
+
+        <div class="quantity-selector mr-8">
+
+          <button class="icon-button less-number bg-primary">
+            <span class="material-icons-round white-color">close</span>
+          </button>
+
+          <input class="bg-active medium-color" type="number" value="01" name="" id="">
+
+          <button class="icon-button plus-number bg-primary">
+            <span class="material-icons-round white-color">add</span>
+          </button>
+
+        </div>
+
+        <input type="text" class="quantity-selector medium-color" value="R$ 5,45">
+
+      </div>
+
+      <button style="width: 100%;display: flex;justify-content: center;" type="submit"
+        class="bg-primary white-color button mt-16">
+        <span class="material-icons-round mr-12">add_shopping_cart</span>
+        Adicionar produto
+      </button>
 
     </div>
 
   </div>
   <!--fim da área de conteúdos-->
 
-
-  <nav class="nav">
-    <!--inicio da nav-->
-    <div class="nav-container bg-primary">
-      <!--inicio do nav container-->
-      <ul>
-        <li>
-          <!--Home-->
-          <a href="home.html">
-            <span class="material-icons-round">home</span>
-            <p>Home</p>
-          </a>
-        </li>
-        <li>
-          <!--Catálogo-->
-          <a href="catalogo.html" class="active">
-            <span class="material-icons-round">dashboard</span>
-            <p>Catálogo</p>
-          </a>
-        </li>
-        <li>
-          <!--Clientes-->
-          <a href="clientes.html">
-            <span class="material-icons-round">person_pin</span>
-            <p>Clientes</p>
-          </a>
-        </li>
-        <li>
-          <!--Perfil-->
-          <a href="perfil.html">
-            <span class="material-icons-round">person</span>
-            <p>Perfil</p>
-          </a>
-        </li>
-      </ul>
+  <a href="carrinho.html" style="border-radius: 0px; position: fixed; bottom: 0px; width: 100%;"
+    class="button bg-primary white-color display-flex justify-between align-center">
+    <div class="display-flex">
+      <span class="material-icons-round mr-12">shopping_cart</span> 1
     </div>
-    <!--fim do nav container-->
-  </nav>
+
+    <p>Abrir carrinho</p>
+
+    <p>R$ 5,00</p>
+  </a>
+
 
   <script>
     function openModal() {
