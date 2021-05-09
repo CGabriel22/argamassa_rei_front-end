@@ -38,44 +38,54 @@
 
       <div class="title-container">
         <!--inicio do title container-->
-        <div class="title">
+        <div class="title no-desktop">
           <h1 class="h4 primary-color">Perfil</h1>
           <!--title text-->
         </div>
         <!--fim do title-->
 
+        <div class="title only-desktop">
+          <h1 class="h4 primary-color">Argamassa Rei</h1>
+          <!--title text-->
+          <div class="tag bg-primary-2">
+            <!--tag-->
+            <p class="body bold secondary-color">PDV</p>
+          </div>
+          <!--fim da tag-->
+        </div>
+
       </div>
       <!--fim do title container-->
 
-      <nav class="nav display-none">
+      <nav class="nav desktop-nav">
         <!--inicio da nav-->
-        <div class="nav-container bg-primary">
+        <div class="nav-container">
           <!--inicio do nav container-->
           <ul>
             <li>
               <!--Home-->
-              <a href="homeContent.html" name="0" class="active">
+              <a href="home.html" name="0" class="">
                 <span class="material-icons-round">home</span>
                 <p>Home</p>
               </a>
             </li>
             <li>
               <!--Catálogo-->
-              <a href="catalogoContent.html" name="1">
+              <a href="catalogo.html" name="1" class="">
                 <span class="material-icons-round">dashboard</span>
                 <p>Catálogo</p>
               </a>
             </li>
             <li>
               <!--Clientes-->
-              <a href="clientesContent.html" name="2">
+              <a href="clientes.html" name="2" class="">
                 <span class="material-icons-round">person_pin</span>
                 <p>Clientes</p>
               </a>
             </li>
             <li>
               <!--Perfil-->
-              <a href="perfilContent.html" name="3">
+              <a href="perfil.html" name="3" class="active">
                 <span class="material-icons-round">person</span>
                 <p>Perfil</p>
               </a>
@@ -95,7 +105,7 @@
   <div class="content-container bg-2">
     <!--área de conteúdos-->
 
-    <div class="profile-header mb-16">
+    <div class="profile-header perfil-card mb-16">
       <!--header do perfil-->
       <a href="minhaFoto.html" class="avatar mr-16">
         <!--container do avatar-->
@@ -109,10 +119,22 @@
         <p class="subtitle medium-color">Vendedor</p>
       </div>
       <!--fim do titulo do perfil-->
+
+      <button class="button display-flex bg-transparent error-color mt-8 only-desktop">
+        <span class="material-icons-round mr-8">exit_to_app</span>
+        Sair da conta
+      </button>
+
     </div>
     <!--fim do header do perfil-->
 
-    <div class="card list-card mb-16 black-color">
+    <div class="perfil-card only-desktop">
+      <p>card1</p>
+    </div>
+
+    <div class="perfil-card only-desktop">card3</div>
+
+    <div class="card list-card mb-16 black-color no-desktop">
       <!--card de lista-->
       <a href="meusDados.html" class="client-list black-color">
         <!--item da lista-->
@@ -134,7 +156,7 @@
     </div>
     <!--card de lista-->
 
-    <div class="card list-card mb-16 black-color">
+    <div class="card list-card mb-16 black-color no-desktop">
       <!--card de lista-->
 
       <a href="alterarSenha.html" class="client-list black-color">
@@ -147,7 +169,7 @@
 
     </div>
 
-    <div class="card list-card mb-16 black-color">
+    <div class="card list-card mb-16 black-color no-desktop">
       <!--card de lista-->
 
       <a href="index.html" class="client-list error-color">

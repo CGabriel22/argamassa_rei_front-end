@@ -137,18 +137,22 @@
   text-align: left;
   padding: 8px 16px;
 }
+.table td:nth-child(-n+2) {
+  width: 128px;
+}
 .table td:last-of-type {
   text-align: right;
+  width: 208px;
 }
 .table tr {
   background-color: #FFFFFF;
   border-top: 1px solid rgba(0, 0, 0, 0.15);
 }
+.table tr:hover {
+  background-color: rgba(0, 0, 0, 0.04);
+}
 .table tr:last-of-type {
   border-bottom: 1px solid rgba(0, 0, 0, 0.15);
-}
-.table tr:nth-child(even) {
-  background-color: #F5F5F5;
 }
 
 .vendas-table-area {
@@ -168,9 +172,6 @@
 .vendas-table-area tbody td {
   padding: 14px;
   color: rgba(0, 0, 0, 0.6);
-}
-.vendas-table-area tr:nth-child(even) {
-  background-color: white;
 }
 
 .header {
@@ -201,6 +202,14 @@
 }
 .title h1 {
   margin-right: 12px;
+}
+
+.tag {
+  padding: 4px 8px;
+  border-radius: 4px;
+}
+.tag .body {
+  line-height: 16px;
 }
 
 .content-container {
@@ -244,6 +253,42 @@
 }
 .calendar-container.open {
   transform: translateY(0%) !important;
+}
+
+@media only screen and (min-width: 768px) {
+  .content-container {
+    display: flex;
+    width: 100%;
+  }
+
+  .perfil-card {
+    background-color: #FFFFFF;
+    width: 100%;
+    border-radius: 12px;
+    border: 1px solid rgba(0, 0, 0, 0.15);
+    padding: 16px;
+  }
+
+  .perfil-card:not(:first-of-type) {
+    margin-left: 24px;
+  }
+
+  .profile-header {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .avatar {
+    width: 120px;
+    height: 120px;
+    margin-bottom: 16px;
+    margin-right: 0px;
+  }
+
+  .title {
+    align-items: center !important;
+  }
 }
 
 /*# sourceMappingURL=perfil.css.map */
