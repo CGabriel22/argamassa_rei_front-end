@@ -6,17 +6,19 @@
   td
     text-align: left
     padding: 8px 16px
+  td:nth-child(-n+2)
+    width: 128px
   td:last-of-type
     text-align: right
+    width: 208px
   tr
     background-color: colors.$surface_color
     border-top: 1px solid colors.$stroke
+  tr:hover
+    background-color: colors.$hover
 
   tr:last-of-type
     border-bottom: 1px solid colors.$stroke
-
-  tr:nth-child(even)
-    background-color: colors.$primary_bg
 
 .vendas-table-area
   background-color: colors.$surface_color
@@ -32,5 +34,3 @@
   tbody td
     padding: 14px
     color: colors.$medium-emphasis
-  tr:nth-child(even)
-    background-color: white
