@@ -311,11 +311,13 @@
 
 .sidebar {
   min-width: 320px;
+  height: 100%;
   background-color: #FFFFFF;
   border: solid 1px rgba(0, 0, 0, 0.15);
   padding: 0 16px;
   margin-right: 16px;
   flex-direction: column;
+  border-radius: 12px;
 }
 .sidebar .title {
   color: rgba(0, 0, 0, 0.6);
@@ -412,7 +414,7 @@
   }
 
   .product-card {
-    max-width: 295.33px;
+    min-width: 288px;
     float: left;
   }
 
@@ -427,10 +429,26 @@
   .catalog-desktop {
     background-color: #FFFFFF;
     border: solid 1px rgba(0, 0, 0, 0.15);
-    padding: 0 16px;
     margin-right: 16px;
     flex-direction: column;
+    width: 100%;
+    border-radius: 12px;
   }
+  .catalog-desktop article h3 {
+    margin: 16px 0 8px 0;
+    padding: 0 16px;
+  }
+}
+.product-container {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  column-gap: 16px;
+  padding: 0 16px;
+  padding-bottom: 8px;
+}
+
+article:not(:last-of-type) {
+  border-bottom: solid 1px rgba(0, 0, 0, 0.15);
 }
 
 /*# sourceMappingURL=catalogo.css.map */

@@ -555,6 +555,7 @@ template {
   padding: 8px;
   border-radius: 8px;
   display: flex;
+  width: 100%;
 }
 .product-card .image-area {
   width: 84px;
