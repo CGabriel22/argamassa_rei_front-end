@@ -6,5 +6,15 @@
   justify-content: space-between
   align-items: center
 
-.client-list:not(:last-of-type)
+.catalog-list
+  padding: 12px 20px 12px 16px
+  display: flex
+  align-items: center
+  p:last-child
+    margin-left: 8px
+
+.client-list:not(:last-of-type), .catalog-list:not(:last-of-type)
   border-bottom: 1px solid colors.$stroke
+
+.client-list:hover, .catalog-list:hover
+  background-color: colors.$hover
