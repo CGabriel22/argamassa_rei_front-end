@@ -26,6 +26,7 @@
 
 .vendas-table-area {
   background-color: #FFFFFF;
+  overflow: hidden;
   border: 1px solid rgba(0, 0, 0, 0.15);
   border-radius: 12px;
 }
@@ -41,6 +42,11 @@
 .vendas-table-area tbody td {
   padding: 14px;
   color: rgba(0, 0, 0, 0.6);
+}
+.vendas-table-area footer {
+  padding: 6px 12px;
+  display: flex;
+  justify-content: flex-end;
 }
 
 .search-bar {

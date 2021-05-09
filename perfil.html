@@ -128,11 +128,63 @@
     </div>
     <!--fim do header do perfil-->
 
-    <div class="perfil-card only-desktop">
-      <p>card1</p>
+    <div class="perfil-card flex-column only-desktop">
+      <header class="display-flex w-100 justify-between align-center">
+        <h2 class="h5 medium-color">Dados</h2>
+        <button class="button display-flex bg-transparent low-color">
+          Salvar alteração
+        </button>
+      </header>
+
+      <form action="" class="mt-16 medium-color">
+        <div class="forms desactive mb-8">
+          <!--input-->
+          <input type="text" id="login" class="bg-2 medium-color" value="Everton Ribeiro" name="login"
+            autocomplete="off" required>
+          <label for="login" class="label-name">
+            <span class="content-name body">Nome</span>
+          </label>
+        </div>
+        <!--fim do input-->
+
+        <div class="forms desactive mb-8">
+          <!--input-->
+          <input type="text" id="login" class="bg-2 medium-color" value="(81) 8742-7319" name="login" autocomplete="off"
+            required>
+          <label for="login" class="label-name">
+            <span class="content-name body">Telefone</span>
+          </label>
+        </div>
+        <!--fim do input-->
+
+        <div class="forms desactive">
+          <!--input-->
+          <input type="text" id="login" class="bg-2 medium-color" value="armazemjp@contato.com" name="login"
+            autocomplete="off" required>
+          <label for="login" class="label-name">
+            <span class="content-name body">Email</span>
+          </label>
+        </div>
+        <!--fim do input-->
+
+      </form>
     </div>
 
-    <div class="perfil-card only-desktop">card3</div>
+    <div class="perfil-card flex-column only-desktop">
+      <header class="display-flex w-100 justify-between align-center">
+        <h2 class="h5 medium-color">Segurança</h2>
+        <button class="button display-flex bg-primary white-color">
+          Alterar senha
+        </button>
+      </header>
+
+      <div class="illustration-area display-flex w-100 justify-center align-center mt-16 mb-16 bg-active">
+        <span style="font-size: 72px;" class="material-icons-round primary-color">security</span>
+      </div>
+
+      <p class="low-color body-2">Configure sua senha frequentemente para manter sempre a sua conta segura.</p>
+
+    </div>
 
     <div class="card list-card mb-16 black-color no-desktop">
       <!--card de lista-->
@@ -182,6 +234,132 @@
 
     <!--fim área de conteúdos-->
   </div>
+
+  <section class="vendas-table-container display-none">
+
+    <div class="vendas-table-area">
+
+      <header class="display-flex justify-between">
+        <h2 class="h5 medium-color">Minhas vendas</h2>
+
+        <div class="display-flex">
+
+          <button class="icon-button openCalendarButton mr-12">
+            <span class="material-icons-round primary-color">calendar_today</span>
+          </button>
+
+          <div class="search-bar">
+
+            <button class="icon-button">
+              <span class="material-icons-round medium-color">search</span>
+            </button>
+
+            <input type="text" class="medium-color body-2" placeholder="Procurando um cliente?">
+
+          </div>
+
+        </div>
+      </header>
+
+      <div class="calendar-container">
+        <div id="calendar"></div>
+        <form action="" class="display-none">
+          <input type="text" id="dateByCalendar1">
+          <input type="text" id="dateByCalendar2">
+        </form>
+      </div>
+
+      <table class="table">
+        <thead>
+          <tr class="bg">
+            <td>Código</td>
+            <td>Data</td>
+            <td>Cliente</td>
+            <td style="padding-right: 112px;">Valor total</td>
+          </tr>
+        </thead>
+
+        <tbody>
+          <tr class="pedido">
+            <td># 2502</td>
+            <td>23/03/2021</td>
+            <td>Ingrid Maria Silva</td>
+            <td>
+              R$ 753,00
+              <a href="#" class="ml-32 primary-color underline medium">ver mais</a>
+            </td>
+          </tr>
+
+          <tr class="pedido">
+            <td># 2502</td>
+            <td>23/03/2021</td>
+            <td>Ingrid Maria Silva</td>
+            <td>
+              R$ 1753,00
+              <a href="#" class="ml-32 primary-color underline medium">ver mais</a>
+            </td>
+          </tr>
+
+          <tr class="pedido">
+            <td># 2502</td>
+            <td>23/03/2021</td>
+            <td>Ingrid Maria Silva</td>
+            <td>
+              R$ 753,00
+              <a href="#" class="ml-32 primary-color underline medium">ver mais</a>
+            </td>
+          </tr>
+
+          <tr class="pedido">
+            <td># 2502</td>
+            <td>23/03/2021</td>
+            <td>Ingrid Maria Silva</td>
+            <td>
+              R$ 1753,00
+              <a href="#" class="ml-32 primary-color underline medium">ver mais</a>
+            </td>
+          </tr>
+
+          <tr class="pedido">
+            <td># 2502</td>
+            <td>23/03/2021</td>
+            <td>Ingrid Maria Silva</td>
+            <td>
+              R$ 1753,00
+              <a href="#" class="ml-32 primary-color underline medium">ver mais</a>
+            </td>
+          </tr>
+
+          <tr class="pedido">
+            <td># 2502</td>
+            <td>23/03/2021</td>
+            <td>Ingrid Maria Silva</td>
+            <td>
+              R$ 753,00
+              <a href="#" class="ml-32 primary-color underline medium">ver mais</a>
+            </td>
+          </tr>
+
+
+        </tbody>
+
+      </table>
+
+      <footer>
+        <div class="display-flex align-center">
+          <button class="icon-button mr-8">
+            <span class="material-icons-round primary-color">keyboard_arrow_left</span>
+          </button>
+          <p class="medium-color body">1-10 de 128</p>
+          <button class="icon-button ml-8">
+            <span class="material-icons-round primary-color">keyboard_arrow_right</span>
+          </button>
+        </div>
+      </footer>
+
+    </div>
+
+  </section>
 
 
   <nav class="nav">

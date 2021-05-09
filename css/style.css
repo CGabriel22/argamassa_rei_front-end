@@ -271,6 +271,10 @@ template {
   background-color: rgba(135, 209, 56, 0.08);
 }
 
+.bg-transparent {
+  background: transparent;
+}
+
 .mb-4 {
   margin-bottom: 4px;
 }
@@ -299,6 +303,10 @@ template {
   margin-right: 16px;
 }
 
+.ml-8 {
+  margin-left: 8px;
+}
+
 .ml-32 {
   margin-left: 32px;
 }
@@ -313,6 +321,10 @@ template {
 
 .px-16 {
   padding: 0 16px;
+}
+
+.w-100 {
+  width: 100%;
 }
 
 .button {
@@ -645,6 +657,10 @@ html, body {
 
 .align-center {
   align-items: center;
+}
+
+.justify-center {
+  justify-content: center;
 }
 
 .content-container {
