@@ -3,28 +3,33 @@
 .product-card
   background-color: colors.$surface_color
   border: 1px solid colors.$stroke
-  padding: 8px
   border-radius: 8px
   display: flex
+  flex-direction: column
   width: 100%
+  min-width: 192px
+  max-width: 210.3px
   .image-area
-    width: 84px
-    height: 80px
+    width: 100%
+    min-width: 192
+    height: 144px
     border-radius: 4px
     background-color: colors.$primary_bg
     display: flex
     justify-content: center
     align-items: center
     overflow: hidden
-    margin-right: 8px
   .product-content
     display: flex
     flex-direction: column
     justify-content: space-around
+    padding: 16px
   .line-one p
     font-weight: 500
+    padding-bottom: 8px
   .line-two
     display: flex
+    padding-bottom: 8px
     p
       margin-right: 4px
   .price-container

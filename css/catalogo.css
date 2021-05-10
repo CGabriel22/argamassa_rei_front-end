@@ -414,12 +414,11 @@
   }
 
   .product-card {
-    min-width: 288px;
     float: left;
   }
 
   .product-card:not(:last-of-type) {
-    margin-right: 8px;
+    margin-right: 16px;
   }
 
   .clear {
@@ -431,8 +430,8 @@
     border: solid 1px rgba(0, 0, 0, 0.15);
     margin-right: 16px;
     flex-direction: column;
-    width: 100%;
     border-radius: 12px;
+    width: 100%;
   }
   .catalog-desktop article h3 {
     margin: 16px 0 8px 0;
@@ -440,11 +439,10 @@
   }
 }
 .product-container {
-  display: grid;
-  grid-template-columns: repeat(3, 1fr);
-  column-gap: 16px;
+  display: flex;
   padding: 0 16px;
   padding-bottom: 8px;
+  flex-flow: row wrap;
 }
 
 article:not(:last-of-type) {
