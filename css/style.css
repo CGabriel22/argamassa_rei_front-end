@@ -564,32 +564,37 @@ template {
 .product-card {
   background-color: #FFFFFF;
   border: 1px solid rgba(0, 0, 0, 0.15);
-  padding: 8px;
   border-radius: 8px;
   display: flex;
+  flex-direction: column;
   width: 100%;
+  min-width: 192px;
+  max-width: 210.3px;
 }
 .product-card .image-area {
-  width: 84px;
-  height: 80px;
+  width: 100%;
+  min-width: 192;
+  height: 144px;
   border-radius: 4px;
   background-color: #F5F5F5;
   display: flex;
   justify-content: center;
   align-items: center;
   overflow: hidden;
-  margin-right: 8px;
 }
 .product-card .product-content {
   display: flex;
   flex-direction: column;
   justify-content: space-around;
+  padding: 16px;
 }
 .product-card .line-one p {
   font-weight: 500;
+  padding-bottom: 8px;
 }
 .product-card .line-two {
   display: flex;
+  padding-bottom: 8px;
 }
 .product-card .line-two p {
   margin-right: 4px;
