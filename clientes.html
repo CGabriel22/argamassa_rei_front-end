@@ -106,15 +106,15 @@
   </header>
   <!--fim do header-->
 
-  <div class="content-container bg-2">
-    <!--área de conteúdos-->
+  <a href="novoClienteDados.html" class="fab bg-secondary primary-color">
+    <!--botão de fab-->
+    <span class="material-icons-round">person_add</span>
+    <p class="button">Novo cliente</p>
+  </a>
+  <!--fim do botão de fab-->
 
-    <a href="novoClienteDados.html" class="fab bg-secondary primary-color">
-      <!--botão de fab-->
-      <span class="material-icons-round">person_add</span>
-      <p class="button">Novo cliente</p>
-    </a>
-    <!--fim do botão de fab-->
+  <div class="content-container bg-2 no-desktop">
+    <!--área de conteúdos-->
 
     <div class="px-16 mb-8 black-color">
       <!--indicador de ordem-->
@@ -176,6 +176,266 @@
 
   </div>
   <!--fim da área de conteúdos-->
+
+  <div class="content-container bg-2 only-desktop">
+    <!-- Sidebar ----------->
+    <section class="sidebar only-desktop">
+
+      <!-- title -->
+      <h2 class="title h5">Clientes</h2>
+      <!-- fim do title -->
+
+      <!-- Search bar----------->
+      <div class="search-bar mb-16">
+        <button class="icon-button">
+          <span class="material-icons-round medium-color">search</span>
+        </button>
+        <input type="text" class="medium-color body-2" placeholder="Procurando um cliente?">
+      </div>
+      <!-- Fim da search bar ----------->
+
+      <!--card de listas-->
+      <div class="card list-card mb-16 black-color">
+        <!--item da lista-->
+        <a href="dadosClientes.html" class="catalog-list active black-color">
+          <p class="body-2">Argamassas</p>
+          <p class="caption low-color">6 produtos</p>
+        </a>
+        <!--item da lista-->
+        <a href="dadosClientes.html" class="catalog-list black-color">
+          <p class="body-2">Tintas</p>
+          <p class="caption low-color">6 produtos</p>
+        </a>
+        <!--item da lista-->
+        <a href="dadosClientes.html" class="catalog-list black-color">
+          <p class="body-2">Reforma e acabamento</p>
+          <p class="caption low-color">6 produtos</p>
+        </a>
+        <!--item da lista-->
+        <a href="dadosClientes.html" class="catalog-list black-color">
+          <p class="body-2">Material de campo</p>
+          <p class="caption low-color">6 produtos</p>
+        </a>
+      </div>
+      <!--fim do card de listas-->
+
+    </section>
+    <!-- Fim da sidebar -------------->
+
+    <section class="catalog-desktop only-desktop">
+      <!-- Categoria de produto------------->
+      <article>
+        <h3 class="body-2 medium-color">Argamassas</h3>
+
+        <div class="product-container">
+
+          <!-- card de produto-->
+          <div class="product-card mb-8" onclick="openModal()">
+            <div class="image-area">
+              <p class="low-color">imagem</p>
+            </div>
+
+            <div class="product-content">
+              <div class="text-container">
+                <div class="line-one">
+                  <p class="body-3 black-color">argamassa rei acl</p>
+                </div>
+                <div class="line-two body-2 medium-color">
+                  <p>saco</p>
+                  <p>‣</p>
+                  <p>20kg</p>
+                </div>
+              </div>
+              <div class="price-container">
+                <p class="body-3 primary-color">R$ 5,45</p>
+                <p class="body-2 medium-color line-through">R$ 6,70</p>
+              </div>
+            </div>
+          </div>
+
+          <!-- card de produto-->
+          <div class="product-card mb-8" onclick="openModal()">
+            <div class="image-area">
+              <p class="low-color">imagem</p>
+            </div>
+
+            <div class="product-content">
+              <div class="text-container">
+                <div class="line-one">
+                  <p class="body-3 black-color">argamassa rei acl</p>
+                </div>
+                <div class="line-two body-2 medium-color">
+                  <p>saco</p>
+                  <p>‣</p>
+                  <p>20kg</p>
+                </div>
+              </div>
+              <div class="price-container">
+                <p class="body-3 primary-color">R$ 5,45</p>
+                <p class="body-2 medium-color line-through">R$ 6,70</p>
+              </div>
+            </div>
+          </div>
+
+          <!-- card de produto-->
+          <div class="product-card mb-8" onclick="openModal()">
+            <div class="image-area">
+              <p class="low-color">imagem</p>
+            </div>
+
+            <div class="product-content">
+              <div class="text-container">
+                <div class="line-one">
+                  <p class="body-3 black-color">argamassa rei acl</p>
+                </div>
+                <div class="line-two body-2 medium-color">
+                  <p>saco</p>
+                  <p>‣</p>
+                  <p>20kg</p>
+                </div>
+              </div>
+              <div class="price-container">
+                <p class="body-3 primary-color">R$ 5,45</p>
+                <p class="body-2 medium-color line-through">R$ 6,70</p>
+              </div>
+            </div>
+          </div>
+
+          <!-- card de produto-->
+          <div class="product-card mb-8" onclick="openModal()">
+            <div class="image-area">
+              <p class="low-color">imagem</p>
+            </div>
+
+            <div class="product-content">
+              <div class="text-container">
+                <div class="line-one">
+                  <p class="body-3 black-color">argamassa rei acl</p>
+                </div>
+                <div class="line-two body-2 medium-color">
+                  <p>saco</p>
+                  <p>‣</p>
+                  <p>20kg</p>
+                </div>
+              </div>
+              <div class="price-container">
+                <p class="body-3 primary-color">R$ 5,45</p>
+                <p class="body-2 medium-color line-through">R$ 6,70</p>
+              </div>
+            </div>
+          </div>
+
+        </div>
+
+      </article>
+
+      <article>
+        <h3 class="body-2 medium-color">Tintas</h3>
+
+        <div class="product-container">
+
+          <!-- card de produto-->
+          <div class="product-card mb-8" onclick="openModal()">
+            <div class="image-area">
+              <p class="low-color">imagem</p>
+            </div>
+
+            <div class="product-content">
+              <div class="text-container">
+                <div class="line-one">
+                  <p class="body-3 black-color">argamassa rei acl</p>
+                </div>
+                <div class="line-two body-2 medium-color">
+                  <p>saco</p>
+                  <p>‣</p>
+                  <p>20kg</p>
+                </div>
+              </div>
+              <div class="price-container">
+                <p class="body-3 primary-color">R$ 5,45</p>
+                <p class="body-2 medium-color line-through">R$ 6,70</p>
+              </div>
+            </div>
+          </div>
+
+          <!-- card de produto-->
+          <div class="product-card mb-8" onclick="openModal()">
+            <div class="image-area">
+              <p class="low-color">imagem</p>
+            </div>
+
+            <div class="product-content">
+              <div class="text-container">
+                <div class="line-one">
+                  <p class="body-3 black-color">argamassa rei acl</p>
+                </div>
+                <div class="line-two body-2 medium-color">
+                  <p>saco</p>
+                  <p>‣</p>
+                  <p>20kg</p>
+                </div>
+              </div>
+              <div class="price-container">
+                <p class="body-3 primary-color">R$ 5,45</p>
+                <p class="body-2 medium-color line-through">R$ 6,70</p>
+              </div>
+            </div>
+          </div>
+
+          <!-- card de produto-->
+          <div class="product-card mb-8" onclick="openModal()">
+            <div class="image-area">
+              <p class="low-color">imagem</p>
+            </div>
+
+            <div class="product-content">
+              <div class="text-container">
+                <div class="line-one">
+                  <p class="body-3 black-color">argamassa rei acl</p>
+                </div>
+                <div class="line-two body-2 medium-color">
+                  <p>saco</p>
+                  <p>‣</p>
+                  <p>20kg</p>
+                </div>
+              </div>
+              <div class="price-container">
+                <p class="body-3 primary-color">R$ 5,45</p>
+                <p class="body-2 medium-color line-through">R$ 6,70</p>
+              </div>
+            </div>
+          </div>
+
+          <!-- card de produto-->
+          <div class="product-card mb-8" onclick="openModal()">
+            <div class="image-area">
+              <p class="low-color">imagem</p>
+            </div>
+
+            <div class="product-content">
+              <div class="text-container">
+                <div class="line-one">
+                  <p class="body-3 black-color">argamassa rei acl</p>
+                </div>
+                <div class="line-two body-2 medium-color">
+                  <p>saco</p>
+                  <p>‣</p>
+                  <p>20kg</p>
+                </div>
+              </div>
+              <div class="price-container">
+                <p class="body-3 primary-color">R$ 5,45</p>
+                <p class="body-2 medium-color line-through">R$ 6,70</p>
+              </div>
+            </div>
+          </div>
+
+        </div>
+
+      </article>
+      <!-- fim da categoria de produto------------->
+    </section>
+  </div>
 
 
   <nav class="nav">
