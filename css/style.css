@@ -359,6 +359,12 @@ template {
   cursor: pointer;
 }
 
+@media only screen and (min-width: 768px) {
+  .fab {
+    bottom: 48px;
+    right: 48px;
+  }
+}
 .nav {
   -o-position: fixed;
   position: fixed;
@@ -561,6 +567,49 @@ template {
     margin-left: 8px;
   }
 }
+.product-card-mobile {
+  background-color: #FFFFFF;
+  border: 1px solid rgba(0, 0, 0, 0.15);
+  padding: 8px;
+  border-radius: 8px;
+  display: flex;
+}
+.product-card-mobile .image-area {
+  width: 84px;
+  height: 80px;
+  border-radius: 4px;
+  background-color: #F5F5F5;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  overflow: hidden;
+  margin-right: 8px;
+}
+.product-card-mobile .product-content {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+}
+.product-card-mobile .line-one p {
+  font-weight: 500;
+}
+.product-card-mobile .line-two {
+  display: flex;
+}
+.product-card-mobile .line-two p {
+  margin-right: 4px;
+}
+.product-card-mobile .price-container {
+  display: flex;
+  align-items: baseline;
+}
+.product-card-mobile .price-container p {
+  margin-right: 4px;
+}
+.product-card-mobile .price-container p .body-2 {
+  font-weight: 500;
+}
+
 .product-card {
   background-color: #FFFFFF;
   border: 1px solid rgba(0, 0, 0, 0.15);

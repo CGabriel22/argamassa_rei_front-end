@@ -1,5 +1,39 @@
 @use 'colors'
 
+.product-card-mobile
+  background-color: colors.$surface_color
+  border: 1px solid colors.$stroke
+  padding: 8px
+  border-radius: 8px
+  display: flex
+  .image-area
+    width: 84px
+    height: 80px
+    border-radius: 4px
+    background-color: colors.$primary_bg
+    display: flex
+    justify-content: center
+    align-items: center
+    overflow: hidden
+    margin-right: 8px
+  .product-content
+    display: flex
+    flex-direction: column
+    justify-content: space-around
+  .line-one p
+    font-weight: 500
+  .line-two
+    display: flex
+    p
+      margin-right: 4px
+  .price-container
+    display: flex
+    align-items: baseline
+    p
+      margin-right: 4px
+      .body-2
+        font-weight: 500
+
 .product-card
   background-color: colors.$surface_color
   border: 1px solid colors.$stroke

@@ -137,36 +137,36 @@
         <input type="text" class="medium-color body-2" placeholder="Procurando um cliente?">
       </div>
       <!-- Fim da search bar ----------->
-      
+
       <!--card de listas-->
       <div class="card list-card mb-16 black-color">
         <!--item da lista-->
         <a href="dadosClientes.html" class="catalog-list black-color">
-          <p class="body-2">Argamassas</p> 
+          <p class="body-2">Argamassas</p>
           <p class="caption low-color">6 produtos</p>
         </a>
         <!--item da lista-->
         <a href="dadosClientes.html" class="catalog-list black-color">
-          <p class="body-2">Tintas</p> 
+          <p class="body-2">Tintas</p>
           <p class="caption low-color">6 produtos</p>
         </a>
         <!--item da lista-->
         <a href="dadosClientes.html" class="catalog-list black-color">
-          <p class="body-2">Reforma e acabamento</p> 
+          <p class="body-2">Reforma e acabamento</p>
           <p class="caption low-color">6 produtos</p>
         </a>
         <!--item da lista-->
         <a href="dadosClientes.html" class="catalog-list black-color">
-          <p class="body-2">Material de campo</p> 
+          <p class="body-2">Material de campo</p>
           <p class="caption low-color">6 produtos</p>
         </a>
       </div>
       <!--fim do card de listas-->
-      
+
     </section>
     <!-- Fim da sidebar -------------->
 
-    <section class="catalog-desktop">
+    <section class="catalog-desktop only-desktop">
       <!-- Categoria de produto------------->
       <article>
         <h3 class="body-2 medium-color">Argamassas</h3>
@@ -178,7 +178,7 @@
             <div class="image-area">
               <p class="low-color">imagem</p>
             </div>
-    
+
             <div class="product-content">
               <div class="text-container">
                 <div class="line-one">
@@ -202,7 +202,7 @@
             <div class="image-area">
               <p class="low-color">imagem</p>
             </div>
-    
+
             <div class="product-content">
               <div class="text-container">
                 <div class="line-one">
@@ -226,7 +226,7 @@
             <div class="image-area">
               <p class="low-color">imagem</p>
             </div>
-    
+
             <div class="product-content">
               <div class="text-container">
                 <div class="line-one">
@@ -250,7 +250,7 @@
             <div class="image-area">
               <p class="low-color">imagem</p>
             </div>
-    
+
             <div class="product-content">
               <div class="text-container">
                 <div class="line-one">
@@ -283,7 +283,7 @@
             <div class="image-area">
               <p class="low-color">imagem</p>
             </div>
-    
+
             <div class="product-content">
               <div class="text-container">
                 <div class="line-one">
@@ -307,7 +307,7 @@
             <div class="image-area">
               <p class="low-color">imagem</p>
             </div>
-    
+
             <div class="product-content">
               <div class="text-container">
                 <div class="line-one">
@@ -331,7 +331,7 @@
             <div class="image-area">
               <p class="low-color">imagem</p>
             </div>
-    
+
             <div class="product-content">
               <div class="text-container">
                 <div class="line-one">
@@ -355,7 +355,7 @@
             <div class="image-area">
               <p class="low-color">imagem</p>
             </div>
-    
+
             <div class="product-content">
               <div class="text-container">
                 <div class="line-one">
@@ -375,46 +375,97 @@
           </div>
 
         </div>
-        
+
       </article>
       <!-- fim da categoria de produto------------->
     </section>
 
-    <div class="chip-group mb-16 display-none">
-      <ul>
-        <li><a href="#" class="active">3,6 litros</a></li>
-        <li><a href="#">3,6 litros</a></li>
-        <li><a href="#">3,6 litros</a></li>
-      </ul>
-    </div>
-
-      <div class="clear"></div>
-      <!--cards de produtos-->
-    </div>
-    <!--fim da área principal do catalogo content-->
-
-    <div class="modal">
-
-      <button class="icon-button" onclick="closeModal()">
-        <span class="material-icons-round medium-color">close</span>
-      </button>
-      <div class="image-area">
-        <p class="low-color">imagem</p>
+    <section class="catalog-desktop no-desktop">
+      <!-- Categoria de produto------------->
+      <div class="chip-group mb-16 display-none">
+        <ul>
+          <li><a href="#" class="active">3,6 litros</a></li>
+          <li><a href="#">3,6 litros</a></li>
+          <li><a href="#">3,6 litros</a></li>
+        </ul>
       </div>
-      <div class="mt-16">
-        <p class="body-2 medium black">nome do produto</p>
-        <p class="body-2 medium medium-color">R$ 5,00</p>
-        <div class="product-info center-items-horizontal medium-color">
-          <p>Saco</p><span>‣</span>
-          <p>20kg</p>
+
+      <div class="product-card-mobile mb-8" onclick="openModal()">
+        <div class="image-area">
+          <p class="low-color">imagem</p>
+        </div>
+
+        <div class="product-content">
+          <div class="text-container">
+            <div class="line-one">
+              <p class="body-3 black-color">argamassa rei acl</p>
+            </div>
+            <div class="line-two body-2 medium-color">
+              <p>saco</p>
+              <p>‣</p>
+              <p>20kg</p>
+            </div>
+          </div>
+          <div class="price-container">
+            <p class="body-3 primary-color">R$ 5,45</p>
+            <p class="body-2 medium-color line-through">R$ 6,70</p>
+          </div>
         </div>
       </div>
-      <p class="body medium-color mt-16">
-        Argamassa ACI é indicada para aplicações internas, em pisos de alvenaria, ela tem ótima resistência e
-        durabilidada, melhor opção para a sua obra.
-      </p>
 
+      <div class="product-card-mobile mb-8" onclick="openModal()">
+        <div class="image-area">
+          <p class="low-color">imagem</p>
+        </div>
+
+        <div class="product-content">
+          <div class="text-container">
+            <div class="line-one">
+              <p class="body-3 black-color">argamassa rei acl</p>
+            </div>
+            <div class="line-two body-2 medium-color">
+              <p>saco</p>
+              <p>‣</p>
+              <p>20kg</p>
+            </div>
+          </div>
+          <div class="price-container">
+            <p class="body-3 primary-color">R$ 5,45</p>
+            <p class="body-2 medium-color line-through">R$ 6,70</p>
+          </div>
+        </div>
+      </div>
+
+      <!-- fim da categoria de produto------------->
+    </section>
+
+    <div class="clear"></div>
+    <!--cards de produtos-->
+  </div>
+  <!--fim da área principal do catalogo content-->
+
+  <div class="modal">
+
+    <button class="icon-button" onclick="closeModal()">
+      <span class="material-icons-round medium-color">close</span>
+    </button>
+    <div class="image-area">
+      <p class="low-color">imagem</p>
     </div>
+    <div class="mt-16">
+      <p class="body-2 medium black">nome do produto</p>
+      <p class="body-2 medium medium-color">R$ 5,00</p>
+      <div class="product-info center-items-horizontal medium-color">
+        <p>Saco</p><span>‣</span>
+        <p>20kg</p>
+      </div>
+    </div>
+    <p class="body medium-color mt-16">
+      Argamassa ACI é indicada para aplicações internas, em pisos de alvenaria, ela tem ótima resistência e
+      durabilidade, melhor opção para a sua obra.
+    </p>
+
+  </div>
 
   </div>
   <!--fim da área de conteúdos-->

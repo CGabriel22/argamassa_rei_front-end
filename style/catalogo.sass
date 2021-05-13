@@ -40,6 +40,12 @@
 .content-container
   padding: 141px 16px 136px 16px
 
+.product-container
+  display: flex
+  padding: 0px
+  padding-bottom: 8px
+  flex-flow: row wrap
+
 @media only screen and ( min-width: 768px )
   .content-container
     display: flex
@@ -65,11 +71,8 @@
       margin: 16px 0 8px 0
       padding: 0 16px
 
-.product-container
-  display: flex
-  padding: 0 16px
-  padding-bottom: 8px
-  flex-flow: row wrap
+  .product-container
+    padding: 0 16px
 
 article:not(:last-of-type)
   border-bottom: solid 1px colors.$stroke
