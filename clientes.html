@@ -106,13 +106,6 @@
   </header>
   <!--fim do header-->
 
-  <a href="novoClienteDados.html" class="fab bg-secondary primary-color">
-    <!--botão de fab-->
-    <span class="material-icons-round">person_add</span>
-    <p class="button">Novo cliente</p>
-  </a>
-  <!--fim do botão de fab-->
-
   <div class="content-container bg-2 no-desktop">
     <!--área de conteúdos-->
 
@@ -194,27 +187,44 @@
       </div>
       <!-- Fim da search bar ----------->
 
+      <h3 class="medium-color body ml-16">A</h3>
       <!--card de listas-->
       <div class="card list-card mb-16 black-color">
         <!--item da lista-->
         <a href="dadosClientes.html" class="catalog-list active black-color">
-          <p class="body-2">Argamassas</p>
-          <p class="caption low-color">6 produtos</p>
+          <p class="body-2">armazém jp</p>
         </a>
         <!--item da lista-->
         <a href="dadosClientes.html" class="catalog-list black-color">
-          <p class="body-2">Tintas</p>
-          <p class="caption low-color">6 produtos</p>
+          <p class="body-2">armazém jp</p>
         </a>
         <!--item da lista-->
         <a href="dadosClientes.html" class="catalog-list black-color">
-          <p class="body-2">Reforma e acabamento</p>
-          <p class="caption low-color">6 produtos</p>
+          <p class="body-2">armazém casa e construção</p>
+        </a>
+      </div>
+      <!--fim do card de listas-->
+
+      <h3 class="medium-color body ml-16">B</h3>
+      <!--card de listas-->
+      <div class="card list-card mb-16 black-color">
+        <!--item da lista-->
+        <a href="dadosClientes.html" class="catalog-list active black-color">
+          <p class="body-2">bianca construções</p>
         </a>
         <!--item da lista-->
         <a href="dadosClientes.html" class="catalog-list black-color">
-          <p class="body-2">Material de campo</p>
-          <p class="caption low-color">6 produtos</p>
+          <p class="body-2">barraca do irmão</p>
+        </a>
+      </div>
+      <!--fim do card de listas-->
+
+      <h3 class="medium-color body ml-16">I</h3>
+      <!--card de listas-->
+      <div class="card list-card mb-16 black-color">
+        <!--item da lista-->
+        <a href="dadosClientes.html" class="catalog-list active black-color">
+          <p class="body-2">Ingrid maria da silva</p>
         </a>
       </div>
       <!--fim do card de listas-->
@@ -222,220 +232,143 @@
     </section>
     <!-- Fim da sidebar -------------->
 
-    <section class="catalog-desktop only-desktop">
+    <section class="catalog-desktop flex-column only-desktop w-100">
       <!-- Categoria de produto------------->
-      <article>
-        <h3 class="body-2 medium-color">Argamassas</h3>
+      <header style="height:fit-content;" class="display-flex w-100 justify-between">
+        <h2 class="h5 medium-color">Armazém JP</h2>
+        <div class="display-flex">
+          <button class="icon-button mr-8">
+            <span class="material-icons-round">edit</span>
+          </button>
+          <button class="icon-button">
+            <span class="material-icons-round">delete</span>
+          </button>
+        </div>
+      </header>
 
-        <div class="product-container">
+      <div class="display-flex w-100 mt-16">
 
-          <!-- card de produto-->
-          <div class="product-card mb-8" onclick="openModal()">
-            <div class="image-area">
-              <p class="low-color">imagem</p>
-            </div>
+        <div style="height:fit-content;" class="card-2 w-100 mr-16">
+          <h3 class="mb-8 body-2 medium-color">Dados</h3>
 
-            <div class="product-content">
-              <div class="text-container">
-                <div class="line-one">
-                  <p class="body-3 black-color">argamassa rei acl</p>
-                </div>
-                <div class="line-two body-2 medium-color">
-                  <p>saco</p>
-                  <p>‣</p>
-                  <p>20kg</p>
-                </div>
-              </div>
-              <div class="price-container">
-                <p class="body-3 primary-color">R$ 5,45</p>
-                <p class="body-2 medium-color line-through">R$ 6,70</p>
-              </div>
-            </div>
+          <div class="forms desactive mb-8">
+            <!--input-->
+            <input type="text" id="login" class="bg-2 medium-color" value="armazem jp" name="login" autocomplete="off"
+              required>
+            <label for="login" class="label-name">
+              <span class="content-name body">Nome</span>
+            </label>
           </div>
+          <!--fim do input-->
 
-          <!-- card de produto-->
-          <div class="product-card mb-8" onclick="openModal()">
-            <div class="image-area">
-              <p class="low-color">imagem</p>
-            </div>
-
-            <div class="product-content">
-              <div class="text-container">
-                <div class="line-one">
-                  <p class="body-3 black-color">argamassa rei acl</p>
-                </div>
-                <div class="line-two body-2 medium-color">
-                  <p>saco</p>
-                  <p>‣</p>
-                  <p>20kg</p>
-                </div>
-              </div>
-              <div class="price-container">
-                <p class="body-3 primary-color">R$ 5,45</p>
-                <p class="body-2 medium-color line-through">R$ 6,70</p>
-              </div>
-            </div>
+          <div class="forms desactive mb-8">
+            <!--input-->
+            <input type="text" id="login" class="bg-2 medium-color" value="(81) 8742-7319" name="login"
+              autocomplete="off" required>
+            <label for="login" class="label-name">
+              <span class="content-name body">Telefone</span>
+            </label>
           </div>
+          <!--fim do input-->
 
-          <!-- card de produto-->
-          <div class="product-card mb-8" onclick="openModal()">
-            <div class="image-area">
-              <p class="low-color">imagem</p>
-            </div>
-
-            <div class="product-content">
-              <div class="text-container">
-                <div class="line-one">
-                  <p class="body-3 black-color">argamassa rei acl</p>
-                </div>
-                <div class="line-two body-2 medium-color">
-                  <p>saco</p>
-                  <p>‣</p>
-                  <p>20kg</p>
-                </div>
-              </div>
-              <div class="price-container">
-                <p class="body-3 primary-color">R$ 5,45</p>
-                <p class="body-2 medium-color line-through">R$ 6,70</p>
-              </div>
-            </div>
+          <div class="forms desactive mb-8">
+            <!--input-->
+            <input type="text" id="login" class="bg-2 medium-color" value="armazemjp@contato.com" name="login"
+              autocomplete="off" required>
+            <label for="login" class="label-name">
+              <span class="content-name body">Email</span>
+            </label>
           </div>
+          <!--fim do input-->
 
-          <!-- card de produto-->
-          <div class="product-card mb-8" onclick="openModal()">
-            <div class="image-area">
-              <p class="low-color">imagem</p>
-            </div>
-
-            <div class="product-content">
-              <div class="text-container">
-                <div class="line-one">
-                  <p class="body-3 black-color">argamassa rei acl</p>
-                </div>
-                <div class="line-two body-2 medium-color">
-                  <p>saco</p>
-                  <p>‣</p>
-                  <p>20kg</p>
-                </div>
-              </div>
-              <div class="price-container">
-                <p class="body-3 primary-color">R$ 5,45</p>
-                <p class="body-2 medium-color line-through">R$ 6,70</p>
-              </div>
-            </div>
+          <div class="forms desactive">
+            <!--input-->
+            <input type="text" id="login" class="bg-2 medium-color" value="08.970.836/0001-20" name="login"
+              autocomplete="off" required>
+            <label for="login" class="label-name">
+              <span class="content-name body">CNPJ</span>
+            </label>
           </div>
+          <!--fim do input-->
 
         </div>
 
-      </article>
+        <div class="card-2 w-100">
+          <h3 class="mb-8 body-2 medium-color">Endereço</h3>
 
-      <article>
-        <h3 class="body-2 medium-color">Tintas</h3>
-
-        <div class="product-container">
-
-          <!-- card de produto-->
-          <div class="product-card mb-8" onclick="openModal()">
-            <div class="image-area">
-              <p class="low-color">imagem</p>
-            </div>
-
-            <div class="product-content">
-              <div class="text-container">
-                <div class="line-one">
-                  <p class="body-3 black-color">argamassa rei acl</p>
-                </div>
-                <div class="line-two body-2 medium-color">
-                  <p>saco</p>
-                  <p>‣</p>
-                  <p>20kg</p>
-                </div>
-              </div>
-              <div class="price-container">
-                <p class="body-3 primary-color">R$ 5,45</p>
-                <p class="body-2 medium-color line-through">R$ 6,70</p>
-              </div>
-            </div>
+          <div class="forms desactive mb-8">
+            <!--input-->
+            <input type="text" id="login" class="bg-2 medium-color" value="53230-630" name="login" autocomplete="off"
+              required>
+            <label for="login" class="label-name">
+              <span class="content-name body">CEP</span>
+            </label>
           </div>
+          <!--fim do input-->
 
-          <!-- card de produto-->
-          <div class="product-card mb-8" onclick="openModal()">
-            <div class="image-area">
-              <p class="low-color">imagem</p>
-            </div>
-
-            <div class="product-content">
-              <div class="text-container">
-                <div class="line-one">
-                  <p class="body-3 black-color">argamassa rei acl</p>
-                </div>
-                <div class="line-two body-2 medium-color">
-                  <p>saco</p>
-                  <p>‣</p>
-                  <p>20kg</p>
-                </div>
-              </div>
-              <div class="price-container">
-                <p class="body-3 primary-color">R$ 5,45</p>
-                <p class="body-2 medium-color line-through">R$ 6,70</p>
-              </div>
-            </div>
+          <div class="forms desactive mb-8">
+            <!--input-->
+            <input type="text" id="login" class="bg-2 medium-color" value="Av. Presidente Kennedy" name="login"
+              autocomplete="off" required>
+            <label for="login" class="label-name">
+              <span class="content-name body">Rua</span>
+            </label>
           </div>
+          <!--fim do input-->
 
-          <!-- card de produto-->
-          <div class="product-card mb-8" onclick="openModal()">
-            <div class="image-area">
-              <p class="low-color">imagem</p>
-            </div>
-
-            <div class="product-content">
-              <div class="text-container">
-                <div class="line-one">
-                  <p class="body-3 black-color">argamassa rei acl</p>
-                </div>
-                <div class="line-two body-2 medium-color">
-                  <p>saco</p>
-                  <p>‣</p>
-                  <p>20kg</p>
-                </div>
-              </div>
-              <div class="price-container">
-                <p class="body-3 primary-color">R$ 5,45</p>
-                <p class="body-2 medium-color line-through">R$ 6,70</p>
-              </div>
-            </div>
+          <div class="forms desactive mb-8">
+            <!--input-->
+            <input type="text" id="login" class="bg-2 medium-color" value="1418" name="login" autocomplete="off"
+              required>
+            <label for="login" class="label-name">
+              <span class="content-name body">Número</span>
+            </label>
           </div>
+          <!--fim do input-->
 
-          <!-- card de produto-->
-          <div class="product-card mb-8" onclick="openModal()">
-            <div class="image-area">
-              <p class="low-color">imagem</p>
-            </div>
-
-            <div class="product-content">
-              <div class="text-container">
-                <div class="line-one">
-                  <p class="body-3 black-color">argamassa rei acl</p>
-                </div>
-                <div class="line-two body-2 medium-color">
-                  <p>saco</p>
-                  <p>‣</p>
-                  <p>20kg</p>
-                </div>
-              </div>
-              <div class="price-container">
-                <p class="body-3 primary-color">R$ 5,45</p>
-                <p class="body-2 medium-color line-through">R$ 6,70</p>
-              </div>
-            </div>
+          <div class="forms desactive mb-8">
+            <!--input-->
+            <input type="text" id="login" class="bg-2 medium-color" value="Peixinhos" name="login" autocomplete="off"
+              required>
+            <label for="login" class="label-name">
+              <span class="content-name body">Bairro</span>
+            </label>
           </div>
+          <!--fim do input-->
+
+          <div class="forms desactive mb-8">
+            <!--input-->
+            <input type="text" id="login" class="bg-2 medium-color" value="Olinda" name="login" autocomplete="off"
+              required>
+            <label for="login" class="label-name">
+              <span class="content-name body">Cidade</span>
+            </label>
+          </div>
+          <!--fim do input-->
+
+          <div class="forms desactive">
+            <!--input-->
+            <input type="text" id="login" class="bg-2 medium-color" value="Em frente a vicente auto peças" name="login"
+              autocomplete="off" required>
+            <label for="login" class="label-name">
+              <span class="content-name body">Ponto de referência</span>
+            </label>
+          </div>
+          <!--fim do input-->
 
         </div>
 
-      </article>
+      </div>
       <!-- fim da categoria de produto------------->
     </section>
   </div>
+
+  <a href="novoClienteDados.html" class="fab bg-secondary primary-color">
+    <!--botão de fab-->
+    <span class="material-icons-round">person_add</span>
+    <p class="button">Novo cliente</p>
+  </a>
+  <!--fim do botão de fab-->
 
 
   <nav class="nav">
