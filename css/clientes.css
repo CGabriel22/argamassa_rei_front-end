@@ -314,4 +314,14 @@
   padding: 141px 16px 136px 16px;
 }
 
+@media only screen and (min-width: 768px) {
+  .content-container {
+    padding: 93px 48px 136px 48px;
+  }
+
+  .content-container-data {
+    padding: 93px 48px 136px 48px;
+  }
+}
+
 /*# sourceMappingURL=clientes.css.map */

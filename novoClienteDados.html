@@ -38,7 +38,7 @@
 
       <div class="title-container">
         <!--inicio do title container-->
-        <div class="title">
+        <div class="title no-desktop">
           <a href="clientes.html" class="icon-button mr-12">
             <span class="material-icons-round primary-color">arrow_back</span>
           </a>
@@ -47,38 +47,48 @@
         </div>
         <!--fim do title-->
 
+        <div class="title only-desktop">
+          <h1 class="h4 primary-color">Argamassa Rei</h1>
+          <!--title text-->
+          <div class="tag bg-primary-2">
+            <!--tag-->
+            <p class="body bold secondary-color">PDV</p>
+          </div>
+          <!--fim da tag-->
+        </div>
+
       </div>
       <!--fim do title container-->
 
-      <nav class="nav display-none">
+      <nav class="nav desktop-nav">
         <!--inicio da nav-->
-        <div class="nav-container bg-primary">
+        <div class="nav-container">
           <!--inicio do nav container-->
           <ul>
             <li>
               <!--Home-->
-              <a href="homeContent.html" name="0" class="active">
+              <a href="home.html" name="0" class="">
                 <span class="material-icons-round">home</span>
                 <p>Home</p>
               </a>
             </li>
             <li>
               <!--Catálogo-->
-              <a href="catalogoContent.html" name="1">
+              <a href="catalogo.html" name="1" class="">
                 <span class="material-icons-round">dashboard</span>
                 <p>Catálogo</p>
               </a>
             </li>
             <li>
               <!--Clientes-->
-              <a href="clientesContent.html" name="2">
+              <a href="clientes.html" name="2" class="active">
                 <span class="material-icons-round">person_pin</span>
                 <p>Clientes</p>
               </a>
             </li>
             <li>
               <!--Perfil-->
-              <a href="perfilContent.html" name="3">
+              <a href="perfil.html" name="3" class="">
                 <span class="material-icons-round">person</span>
                 <p>Perfil</p>
               </a>
@@ -92,7 +102,7 @@
     </div>
     <!--fim do header container-->
 
-    <div class="clientes-nav">
+    <div class="clientes-nav no-desktop">
       <!--inicio da navegação interior do catalogo-->
       <ul>
         <li><a href="novoClienteDados.html" class="active">Informações</a></li>
@@ -103,7 +113,7 @@
   </header>
   <!--fim do header-->
 
-  <div class="content-container-data bg-2">
+  <div class="content-container-data no-desktop bg-2">
     <!--área de conteúdos-->
 
     <form action="#" class="medium-color">
@@ -151,9 +161,186 @@
 
     </form>
 
-
   </div>
   <!--fim da área de conteúdos-->
+
+  <div class="content-container bg-2 only-desktop">
+    <!-- Sidebar ----------->
+    <section class="sidebar only-desktop">
+
+      <!-- title -->
+      <h2 class="title h5">Clientes</h2>
+      <!-- fim do title -->
+
+      <!-- Search bar----------->
+      <div class="search-bar mb-16">
+        <button class="icon-button">
+          <span class="material-icons-round medium-color">search</span>
+        </button>
+        <input type="text" class="medium-color body-2" placeholder="Procurando um cliente?">
+      </div>
+      <!-- Fim da search bar ----------->
+
+      <h3 class="medium-color body ml-16">A</h3>
+      <!--card de listas-->
+      <div class="card list-card mb-16 black-color">
+        <!--item da lista-->
+        <a href="dadosClientes.html" class="catalog-list active black-color">
+          <p class="body-2">armazém jp</p>
+        </a>
+        <!--item da lista-->
+        <a href="dadosClientes.html" class="catalog-list black-color">
+          <p class="body-2">armazém jp</p>
+        </a>
+        <!--item da lista-->
+        <a href="dadosClientes.html" class="catalog-list black-color">
+          <p class="body-2">armazém casa e construção</p>
+        </a>
+      </div>
+      <!--fim do card de listas-->
+
+      <h3 class="medium-color body ml-16">B</h3>
+      <!--card de listas-->
+      <div class="card list-card mb-16 black-color">
+        <!--item da lista-->
+        <a href="dadosClientes.html" class="catalog-list active black-color">
+          <p class="body-2">bianca construções</p>
+        </a>
+        <!--item da lista-->
+        <a href="dadosClientes.html" class="catalog-list black-color">
+          <p class="body-2">barraca do irmão</p>
+        </a>
+      </div>
+      <!--fim do card de listas-->
+
+      <h3 class="medium-color body ml-16">I</h3>
+      <!--card de listas-->
+      <div class="card list-card mb-16 black-color">
+        <!--item da lista-->
+        <a href="dadosClientes.html" class="catalog-list active black-color">
+          <p class="body-2">Ingrid maria da silva</p>
+        </a>
+      </div>
+      <!--fim do card de listas-->
+
+    </section>
+    <!-- Fim da sidebar -------------->
+
+    <section class="catalog-desktop flex-column only-desktop w-100">
+      <!-- Categoria de produto------------->
+      <header style="height:fit-content;" class="display-flex w-100 justify-between align-center">
+        <h2 class="h5 medium-color">Novo cliente</h2>
+        <button style="border: 1px solid rgba(0, 0, 0, 0.15);height: 40px;"
+          class="bg-transparent low-color button">adicionar
+          cliente</button>
+      </header>
+
+      <div class="display-flex w-100 mt-16">
+
+        <div style="height:fit-content;" class="card-2 w-100 mr-16">
+          <h3 class="mb-8 body-2 medium-color">Dados</h3>
+
+          <div class="forms desactive mb-8">
+            <!--input-->
+            <input type="text" id="login" class="bg-2 medium-color" name="login" autocomplete="off" required>
+            <label for="login" class="label-name">
+              <span class="content-name body">Nome</span>
+            </label>
+          </div>
+          <!--fim do input-->
+
+          <div class="forms desactive mb-8">
+            <!--input-->
+            <input type="text" id="login" class="bg-2 medium-color" name="login" autocomplete="off" required>
+            <label for="login" class="label-name">
+              <span class="content-name body">Telefone</span>
+            </label>
+          </div>
+          <!--fim do input-->
+
+          <div class="forms desactive mb-8">
+            <!--input-->
+            <input type="text" id="login" class="bg-2 medium-color" name="login" autocomplete="off" required>
+            <label for="login" class="label-name">
+              <span class="content-name body">Email</span>
+            </label>
+          </div>
+          <!--fim do input-->
+
+          <div class="forms desactive">
+            <!--input-->
+            <input type="text" id="login" class="bg-2 medium-color" name="login" autocomplete="off" required>
+            <label for="login" class="label-name">
+              <span class="content-name body">CNPJ</span>
+            </label>
+          </div>
+          <!--fim do input-->
+
+        </div>
+
+        <div class="card-2 w-100">
+          <h3 class="mb-8 body-2 medium-color">Endereço</h3>
+
+          <div class="forms desactive mb-8">
+            <!--input-->
+            <input type="text" id="login" class="bg-2 medium-color" name="login" autocomplete="off" required>
+            <label for="login" class="label-name">
+              <span class="content-name body">CEP</span>
+            </label>
+          </div>
+          <!--fim do input-->
+
+          <div class="forms desactive mb-8">
+            <!--input-->
+            <input type="text" id="login" class="bg-2 medium-color" name="login" autocomplete="off" required>
+            <label for="login" class="label-name">
+              <span class="content-name body">Rua</span>
+            </label>
+          </div>
+          <!--fim do input-->
+
+          <div class="forms desactive mb-8">
+            <!--input-->
+            <input type="text" id="login" class="bg-2 medium-color" name="login" autocomplete="off" required>
+            <label for="login" class="label-name">
+              <span class="content-name body">Número</span>
+            </label>
+          </div>
+          <!--fim do input-->
+
+          <div class="forms desactive mb-8">
+            <!--input-->
+            <input type="text" id="login" class="bg-2 medium-color" name="login" autocomplete="off" required>
+            <label for="login" class="label-name">
+              <span class="content-name body">Bairro</span>
+            </label>
+          </div>
+          <!--fim do input-->
+
+          <div class="forms desactive mb-8">
+            <!--input-->
+            <input type="text" id="login" class="bg-2 medium-color" name="login" autocomplete="off" required>
+            <label for="login" class="label-name">
+              <span class="content-name body">Cidade</span>
+            </label>
+          </div>
+          <!--fim do input-->
+
+          <div class="forms desactive">
+            <!--input-->
+            <input type="text" id="login" class="bg-2 medium-color" name="login" autocomplete="off" required>
+            <label for="login" class="label-name">
+              <span class="content-name body">Ponto de referência</span>
+            </label>
+          </div>
+          <!--fim do input-->
+
+        </div>
+
+      </div>
+      <!-- fim da categoria de produto------------->
+    </section>
+  </div>
 
 
   <nav class="nav">
