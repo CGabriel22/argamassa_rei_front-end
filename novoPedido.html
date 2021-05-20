@@ -36,7 +36,7 @@
     <div class="header-container">
       <!--inicio do header container-->
 
-      <div class="title-container">
+      <div class="title-container no-desktop">
         <!--inicio do title container-->
         <div class="title">
           <a href="home.html" class="icon-button mr-12">
@@ -50,9 +50,30 @@
       </div>
       <!--fim do title container-->
 
-      <button class="icon-button">
+      <div style="max-width: fit-content;" class="title-container only-desktop">
+        <!--inicio do title container-->
+        <div style="align-items: flex-end;" class="title">
+          <h1 class="h4 primary-color">Novo pedido</h1>
+          <!--title text-->
+          <p style="line-height: 32px;" class="h6 regular medium-color">Selecione o cliente</p>
+        </div>
+
+      </div>
+      <!--fim do title container-->
+
+      <button class="icon-button no-desktop">
         <span class="material-icons-round primary-color">search</span>
       </button>
+
+      <div class="only-desktop">
+        <button class="button display-flex align-center justify-center bg-primary white-color">
+          avançar
+        </button>
+
+        <button class="icon-button low-color ml-16">
+          <span class="material-icons-round">shopping_cart</span>
+        </button>
+      </div>
 
       <nav class="nav display-none">
         <!--inicio da nav-->
@@ -99,7 +120,7 @@
   </header>
   <!--fim do header-->
 
-  <div class="content-container bg-2">
+  <div class="content-container no-desktop bg-2">
     <!--área de conteúdos-->
 
     <h2 class="body-3 medium-color mb-16">Selecione o seu cliente</h2>
@@ -165,6 +186,198 @@
   </div>
   <!--fim da área de conteúdos-->
 
+  <div class="content-container bg-2 only-desktop">
+    <!-- Sidebar ----------->
+    <section class="sidebar only-desktop">
+
+      <!-- title -->
+      <h2 class="title h5">Clientes</h2>
+      <!-- fim do title -->
+
+      <!-- Search bar----------->
+      <div class="search-bar mb-16">
+        <button class="icon-button">
+          <span class="material-icons-round medium-color">search</span>
+        </button>
+        <input type="text" class="medium-color body-2" placeholder="Procurando um cliente?">
+      </div>
+      <!-- Fim da search bar ----------->
+
+      <h3 class="medium-color body ml-16">A</h3>
+      <!--card de listas-->
+      <div class="card list-card mb-16 black-color">
+        <!--item da lista-->
+        <a href="dadosClientes.html" class="catalog-list active black-color">
+          <p class="body-2">armazém jp</p>
+        </a>
+        <!--item da lista-->
+        <a href="dadosClientes.html" class="catalog-list black-color">
+          <p class="body-2">armazém jp</p>
+        </a>
+        <!--item da lista-->
+        <a href="dadosClientes.html" class="catalog-list black-color">
+          <p class="body-2">armazém casa e construção</p>
+        </a>
+      </div>
+      <!--fim do card de listas-->
+
+      <h3 class="medium-color body ml-16">B</h3>
+      <!--card de listas-->
+      <div class="card list-card mb-16 black-color">
+        <!--item da lista-->
+        <a href="dadosClientes.html" class="catalog-list active black-color">
+          <p class="body-2">bianca construções</p>
+        </a>
+        <!--item da lista-->
+        <a href="dadosClientes.html" class="catalog-list black-color">
+          <p class="body-2">barraca do irmão</p>
+        </a>
+      </div>
+      <!--fim do card de listas-->
+
+      <h3 class="medium-color body ml-16">I</h3>
+      <!--card de listas-->
+      <div class="card list-card mb-16 black-color">
+        <!--item da lista-->
+        <a href="dadosClientes.html" class="catalog-list active black-color">
+          <p class="body-2">Ingrid maria da silva</p>
+        </a>
+      </div>
+      <!--fim do card de listas-->
+
+    </section>
+    <!-- Fim da sidebar -------------->
+
+    <section class="catalog-desktop flex-column only-desktop w-100">
+      <!-- Categoria de produto------------->
+      <header style="height:fit-content;" class="display-flex w-100 justify-between">
+        <h2 class="h5 medium-color">Armazém JP</h2>
+        <div class="display-flex">
+          <button class="icon-button mr-8">
+            <span class="material-icons-round">edit</span>
+          </button>
+          <button class="icon-button">
+            <span class="material-icons-round">delete</span>
+          </button>
+        </div>
+      </header>
+
+      <div class="display-flex w-100 mt-16">
+
+        <div style="height:fit-content;" class="card-2 w-100 mr-16">
+          <h3 class="mb-8 body-2 medium-color">Dados</h3>
+
+          <div class="forms desactive mb-8">
+            <!--input-->
+            <input type="text" id="login" class="bg-2 medium-color" value="armazem jp" name="login" autocomplete="off"
+              required>
+            <label for="login" class="label-name">
+              <span class="content-name body">Nome</span>
+            </label>
+          </div>
+          <!--fim do input-->
+
+          <div class="forms desactive mb-8">
+            <!--input-->
+            <input type="text" id="login" class="bg-2 medium-color" value="(81) 8742-7319" name="login"
+              autocomplete="off" required>
+            <label for="login" class="label-name">
+              <span class="content-name body">Telefone</span>
+            </label>
+          </div>
+          <!--fim do input-->
+
+          <div class="forms desactive mb-8">
+            <!--input-->
+            <input type="text" id="login" class="bg-2 medium-color" value="armazemjp@contato.com" name="login"
+              autocomplete="off" required>
+            <label for="login" class="label-name">
+              <span class="content-name body">Email</span>
+            </label>
+          </div>
+          <!--fim do input-->
+
+          <div class="forms desactive">
+            <!--input-->
+            <input type="text" id="login" class="bg-2 medium-color" value="08.970.836/0001-20" name="login"
+              autocomplete="off" required>
+            <label for="login" class="label-name">
+              <span class="content-name body">CNPJ</span>
+            </label>
+          </div>
+          <!--fim do input-->
+
+        </div>
+
+        <div class="card-2 w-100">
+          <h3 class="mb-8 body-2 medium-color">Endereço</h3>
+
+          <div class="forms desactive mb-8">
+            <!--input-->
+            <input type="text" id="login" class="bg-2 medium-color" value="53230-630" name="login" autocomplete="off"
+              required>
+            <label for="login" class="label-name">
+              <span class="content-name body">CEP</span>
+            </label>
+          </div>
+          <!--fim do input-->
+
+          <div class="forms desactive mb-8">
+            <!--input-->
+            <input type="text" id="login" class="bg-2 medium-color" value="Av. Presidente Kennedy" name="login"
+              autocomplete="off" required>
+            <label for="login" class="label-name">
+              <span class="content-name body">Rua</span>
+            </label>
+          </div>
+          <!--fim do input-->
+
+          <div class="forms desactive mb-8">
+            <!--input-->
+            <input type="text" id="login" class="bg-2 medium-color" value="1418" name="login" autocomplete="off"
+              required>
+            <label for="login" class="label-name">
+              <span class="content-name body">Número</span>
+            </label>
+          </div>
+          <!--fim do input-->
+
+          <div class="forms desactive mb-8">
+            <!--input-->
+            <input type="text" id="login" class="bg-2 medium-color" value="Peixinhos" name="login" autocomplete="off"
+              required>
+            <label for="login" class="label-name">
+              <span class="content-name body">Bairro</span>
+            </label>
+          </div>
+          <!--fim do input-->
+
+          <div class="forms desactive mb-8">
+            <!--input-->
+            <input type="text" id="login" class="bg-2 medium-color" value="Olinda" name="login" autocomplete="off"
+              required>
+            <label for="login" class="label-name">
+              <span class="content-name body">Cidade</span>
+            </label>
+          </div>
+          <!--fim do input-->
+
+          <div class="forms desactive">
+            <!--input-->
+            <input type="text" id="login" class="bg-2 medium-color" value="Em frente a vicente auto peças" name="login"
+              autocomplete="off" required>
+            <label for="login" class="label-name">
+              <span class="content-name body">Ponto de referência</span>
+            </label>
+          </div>
+          <!--fim do input-->
+
+        </div>
+
+      </div>
+      <!-- fim da categoria de produto------------->
+    </section>
+  </div>
 
 
 
