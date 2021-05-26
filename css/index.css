@@ -149,6 +149,9 @@
   justify-content: center;
   cursor: pointer;
 }
+.icon-button.circle {
+  border-radius: 50%;
+}
 
 @media only screen and (min-width: 768px) {
   .fab {
