@@ -33,6 +33,140 @@
 
   <div class="black-screen" onclick="closeModal()"></div>
 
+  <div class="card carrinho">
+
+    <div class="display-flex align-center">
+      <div class="icon-button medium-color mr-8">
+        <span class="material-icons-round">close</span>
+      </div>
+      <h3 class="h5 black-color">Armazém JP</h3>
+    </div>
+
+    <div class="px-8 mt-8 mb-16">
+      <p class="medium-color body"># 2502 • 23/03/2021</p>
+    </div>
+
+    <div class="px-8 container-produto">
+
+      <div class="product-card-mobile mb-8">
+        <div class="image-area">
+          <p class="low-color">imagem</p>
+        </div>
+
+        <div class="product-content">
+          <div class="text-container">
+            <div class="line-one">
+              <p class="body-3 black-color">1 ‣ argamassa rei acl</p>
+            </div>
+            <div class="line-two body-2 medium-color">
+              <p>saco</p>
+              <p>‣</p>
+              <p>20kg</p>
+            </div>
+          </div>
+          <div class="price-container">
+            <p class="body-3 primary-color">R$ 5,45</p>
+            <p class="body-2 medium-color line-through">R$ 6,70</p>
+          </div>
+        </div>
+      </div>
+      <!--fim do card de produto-->
+
+      <div class="product-card-mobile mb-8">
+        <div class="image-area">
+          <p class="low-color">imagem</p>
+        </div>
+
+        <div class="product-content">
+          <div class="text-container">
+            <div class="line-one">
+              <p class="body-3 black-color">1 ‣ argamassa rei acl</p>
+            </div>
+            <div class="line-two body-2 medium-color">
+              <p>saco</p>
+              <p>‣</p>
+              <p>20kg</p>
+            </div>
+          </div>
+          <div class="price-container">
+            <p class="body-3 primary-color">R$ 5,45</p>
+            <p class="body-2 medium-color line-through">R$ 6,70</p>
+          </div>
+        </div>
+      </div>
+      <!--fim do card de produto-->
+
+      <div class="product-card-mobile mb-8">
+        <div class="image-area">
+          <p class="low-color">imagem</p>
+        </div>
+
+        <div class="product-content">
+          <div class="text-container">
+            <div class="line-one">
+              <p class="body-3 black-color">1 ‣ argamassa rei acl</p>
+            </div>
+            <div class="line-two body-2 medium-color">
+              <p>saco</p>
+              <p>‣</p>
+              <p>20kg</p>
+            </div>
+          </div>
+          <div class="price-container">
+            <p class="body-3 primary-color">R$ 5,45</p>
+            <p class="body-2 medium-color line-through">R$ 6,70</p>
+          </div>
+        </div>
+      </div>
+      <!--fim do card de produto-->
+
+      <div class="product-card-mobile mb-8">
+        <div class="image-area">
+          <p class="low-color">imagem</p>
+        </div>
+
+        <div class="product-content">
+          <div class="text-container">
+            <div class="line-one">
+              <p class="body-3 black-color">1 ‣ argamassa rei acl</p>
+            </div>
+            <div class="line-two body-2 medium-color">
+              <p>saco</p>
+              <p>‣</p>
+              <p>20kg</p>
+            </div>
+          </div>
+          <div class="price-container">
+            <p class="body-3 primary-color">R$ 5,45</p>
+            <p class="body-2 medium-color line-through">R$ 6,70</p>
+          </div>
+        </div>
+      </div>
+      <!--fim do card de produto-->
+
+    </div>
+
+    <footer class="display-flex flex-column">
+
+      <div class="display-flex justify-between align-center mb-4">
+        <p class="body medium-color">Valor total</p>
+        <p class="h5 black-color">R$ 5,45</p>
+      </div>
+
+      <div class="display-flex justify-between align-center">
+        <p class="body medium-color">Valor total</p>
+        <p class="body medium-color">R$ 1,25</p>
+      </div>
+
+      <button class="button bg-primary white-color display-flex align-center justify-center mt-8 mb-4 w-100">
+        <span class="mr-12" style="font-size: 18px;">$</span>
+        Finalizar pedido
+      </button>
+
+    </footer>
+
+  </div>
+
   <header class="header bg-white">
     <!--inicio do header-->
     <div class="header-container">
@@ -324,10 +458,28 @@
         <p>20kg</p>
       </div>
     </div>
-    <p class="mt-16">
-      Argamassa ACI é indicada para aplicações internas, em pisos de alvenaria, ela tem ótima resistência e
-      durabilidade, melhor opção para a sua obra.
-    </p>
+    <div class="mt-16 display-flex">
+
+      <div class="quantity-selector mr-16">
+        <button class="less-number icon-button bg-primary white-color">
+          <span class="icone-menos"></span>
+        </button>
+
+        <input class="medium-color" type="number" value="01">
+
+        <button class="plus-number icon-button bg-primary white-color">
+          <span class="material-icons-round">add</span>
+        </button>
+      </div>
+
+      <input class="quantity-selector" value="R$ 5,45" disabled type="text">
+
+    </div>
+
+    <button class="button bg-primary white-color display-flex align-center justify-center mt-16 w-100">
+      <span class="material-icons-round mr-12">add_shopping_cart</span>
+      Adicionar produto
+    </button>
 
   </div>
 
