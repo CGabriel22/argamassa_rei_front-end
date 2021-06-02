@@ -412,6 +412,15 @@ input[type=number] {
   max-height: 322px;
   overflow-y: scroll;
 }
+.carrinho .container-produto::-webkit-scrollbar {
+  width: 2px;
+}
+.carrinho .container-produto::-webkit-scrollbar-track {
+  background: #fff;
+}
+.carrinho .container-produto::-webkit-scrollbar-thumb {
+  background: #2D4037;
+}
 .carrinho footer {
   position: absolute;
   bottom: 0px;

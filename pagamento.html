@@ -36,7 +36,7 @@
     <div class="header-container">
       <!--inicio do header container-->
 
-      <div class="title-container">
+      <div class="title-container no-desktop">
         <!--inicio do title container-->
         <div class="title">
           <a href="carrinho.html" class="icon-button mr-12">
@@ -50,44 +50,16 @@
       </div>
       <!--fim do title container-->
 
-      <nav class="nav display-none">
-        <!--inicio da nav-->
-        <div class="nav-container bg-primary">
-          <!--inicio do nav container-->
-          <ul>
-            <li>
-              <!--Home-->
-              <a href="homeContent.html" name="0" class="active">
-                <span class="material-icons-round">home</span>
-                <p>Home</p>
-              </a>
-            </li>
-            <li>
-              <!--Catálogo-->
-              <a href="catalogoContent.html" name="1">
-                <span class="material-icons-round">dashboard</span>
-                <p>Catálogo</p>
-              </a>
-            </li>
-            <li>
-              <!--Clientes-->
-              <a href="clientesContent.html" name="2">
-                <span class="material-icons-round">person_pin</span>
-                <p>Clientes</p>
-              </a>
-            </li>
-            <li>
-              <!--Perfil-->
-              <a href="perfilContent.html" name="3">
-                <span class="material-icons-round">person</span>
-                <p>Perfil</p>
-              </a>
-            </li>
-          </ul>
+      <div style="max-width: fit-content;" class="title-container only-desktop">
+        <!--inicio do title container-->
+        <div style="align-items: flex-end;" class="title">
+          <h1 class="h4 primary-color">Novo pedido</h1>
+          <!--title text-->
+          <p style="line-height: 32px;" class="h6 regular medium-color">finalize o seu pedido</p>
         </div>
-        <!--fim do nav container-->
-      </nav>
-      <!--fim da nav-->
+
+      </div>
+      <!--fim do title container-->
 
     </div>
     <!--fim do header container-->
@@ -95,34 +67,61 @@
   </header>
   <!--fim do header-->
 
-  <div class="content-container bg-2">
+  <div class="content-container pagamento display-flex align-center justify-center bg-2">
     <!--área de conteúdos-->
 
-    <div class="card display-flex align-center mb-8">
-      <input style="width: 20px; height: 20px;" type="radio" class="mr-12" id="one" name="gender" value="one">
-      <p class="body-2 black-color">À vista na entrega</p>
-    </div>
+    <div class="container-extra pagamento">
 
-    <div class="card display-flex align-center mb-8">
-      <input style="width: 20px; height: 20px;" type="radio" class="mr-12" id="one" name="gender" value="one">
-      <p class="body-2 black-color">Cartão de crédito na entrega</p>
-    </div>
+      <h2 class="only-desktop h5 medium-color mb-16">Pagamento</h2>
 
-    <div class="card display-flex align-center mb-8">
-      <input style="width: 20px; height: 20px;" type="radio" class="mr-12" id="one" name="gender" value="one">
-      <p class="body-2 black-color">Cartão de crédito online</p>
+      <div class="card display-flex align-center mb-8">
+        <input style="width: 20px; height: 20px;" onclick="checarSeSelecionado()" type="radio" class="mr-12" id="one"
+          name="gender" value="one">
+        <p class="body-2 black-color">À vista na entrega</p>
+      </div>
+
+      <div class="card display-flex align-center mb-8">
+        <input style="width: 20px; height: 20px;" onclick="checarSeSelecionado()" type="radio" class="mr-12" id="one"
+          name="gender" value="one">
+        <p class="body-2 black-color">Cartão de crédito na entrega</p>
+      </div>
+
+      <div class="card display-flex align-center mb-8">
+        <input style="width: 20px; height: 20px;" onclick="checarSeSelecionado()" type="radio" class="mr-12" id="one"
+          name="gender" value="one">
+        <p class="body-2 black-color">Cartão de crédito online</p>
+      </div>
+
+      <div class="auxiliar-botao display-none">
+        <a href="concluido.html"
+          style="position: absolute; bottom: 16px; left: 16px; width: 91%;justify-content: center;" type="submit"
+          class="bg-primary white-color button mt-16 only-desktop">
+          concluir
+        </a>
+      </div>
+
     </div>
 
 
     <!--fim área de conteúdos-->
   </div>
 
-  <div style="position: fixed;bottom: 8px;width: 100%; padding: 0px 16px;">
-    <a href="pagamento.html" style="width: 100%;display: flex;justify-content: center;" type="submit"
+  <div class="no-desktop" style="position: fixed;bottom: 8px;width: 100%; padding: 0px 16px;">
+    <a href="concluido.html" style="width: 100%;display: flex;justify-content: center;" type="submit"
       class="bg-primary white-color button mt-16">
       concluir
     </a>
   </div>
+
+  <script>
+    function checarSeSelecionado() {
+      document.querySelectorAll(".container-extra .card input").forEach(i => {
+        if (i.checked) {
+          document.querySelector(".auxiliar-botao").classList.remove('display-none')
+        }
+      })
+    }
+  </script>
 
 </body>
 

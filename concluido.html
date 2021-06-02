@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <!-- meta tags essenciais -->
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- meta tags de SEO -->
+    <meta name="description" content="descrição">
+    <meta name="keywords" content="argamassa rei, pdv, Olinda, Pernambuco, argamassa rei pdv">
+    <meta name="author" content="Carlos Gabriel, Gabriel França">
+    <!-- import das fontes -->
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link rel="preload" href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700;900&display=swap"
+        as="style" onload="this.onload=null;this.rel='stylesheet'">
+    <noscript>
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700;900&display=swap">
+    </noscript>
+    <!-- import da fonte de ícones material icons -->
+    <link href="https://fonts.googleapis.com/css?family=Material+Icons|Material+Icons+Round&display=swap"
+        rel="stylesheet">
+    <!-- titulo da página -->
+    <title>pagamento - Argamassa Rei PDV</title>
+    <!-- favicon -->
+    <link rel="shortcut icon" href="img/favicon.svg" type="image/x-icon">
+    <!-- estilos -->
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/perfil.css">
+</head>
+
+<body>
+
+    <header class="header bg-white only-desktop">
+        <!--inicio do header-->
+        <div class="header-container">
+            <!--inicio do header container-->
+
+            <div style="max-width: fit-content;" class="title-container">
+                <!--inicio do title container-->
+                <div style="align-items: flex-end;" class="title">
+                    <h1 class="h4 primary-color">Novo pedido</h1>
+                    <!--title text-->
+                    <p style="line-height: 32px;" class="h6 regular medium-color">finalize o seu pedido</p>
+                </div>
+
+            </div>
+            <!--fim do title container-->
+
+        </div>
+        <!--fim do header container-->
+
+    </header>
+    <!--fim do header-->
+
+    <div class="content-container pagamento display-flex align-center justify-center bg-2">
+        <!--área de conteúdos-->
+
+        <div class="container-extra pagamento">
+
+            <h2 class="only-desktop h5 medium-color mb-16">Pagamento</h2>
+
+            <div class="auxiliar-botao display-none">
+                <a href="pagamento.html"
+                    style="position: absolute; bottom: 16px; left: 16px; width: 91%;justify-content: center;"
+                    type="submit" class="bg-primary white-color button mt-16 only-desktop">
+                    concluir
+                </a>
+            </div>
+
+        </div>
+
+
+        <!--fim área de conteúdos-->
+    </div>
+
+    <div class="no-desktop" style="position: fixed;bottom: 8px;width: 100%; padding: 0px 16px;">
+        <a href="pagamento.html" style="width: 100%;display: flex;justify-content: center;" type="submit"
+            class="bg-primary white-color button mt-16">
+            concluir
+        </a>
+    </div>
+
+    <script>
+        function checarSeSelecionado() {
+            document.querySelectorAll(".container-extra .card input").forEach(i => {
+                if (i.checked) {
+                    document.querySelector(".auxiliar-botao").classList.remove('display-none')
+                }
+            })
+        }
+    </script>
+
+</body>
+
+</html>
