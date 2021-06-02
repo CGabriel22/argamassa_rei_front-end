@@ -1,3 +1,5 @@
+@use 'colors'
+
 .carrinho
     display: flex
     flex-direction: column
@@ -11,6 +13,15 @@
     .container-produto
         max-height: 322px
         overflow-y: scroll
+    .container-produto::-webkit-scrollbar
+        width: 2px
+
+    .container-produto::-webkit-scrollbar-track
+        background: #fff
+
+    .container-produto::-webkit-scrollbar-thumb
+        background: colors.$primary_color
+
     footer
         position: absolute
         bottom: 0px

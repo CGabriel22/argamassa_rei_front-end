@@ -69,6 +69,9 @@
   &.open
     transform: translateY(0%)!important
 
+.container-extra
+  width: 100%
+
 @media only screen and ( min-width: 768px )
   .content-container
     display: flex
@@ -104,3 +107,20 @@
     max-width: 886px
     display: block!important
     padding: 8px 48px 60px 48px
+
+  .content-container.pagamento
+    height: 100%
+    padding-top: 70px
+
+  .container-extra.pagamento
+    position: relative
+    width: 100%
+    max-width: 360px
+    height: 100%
+    max-height: 90%
+    display: flex
+    flex-direction: column
+    background-color: colors.$surface_color
+    border: 1px solid colors.$stroke
+    border-radius: 8px
+    padding: 16px

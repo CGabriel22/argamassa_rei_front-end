@@ -33,10 +33,10 @@
 
   <div class="black-screen" onclick="closeModal()"></div>
 
-  <div class="card carrinho">
+  <div class="card carrinho display-none">
 
     <div class="display-flex align-center">
-      <div class="icon-button medium-color mr-8">
+      <div class="icon-button medium-color mr-8" onclick="closeCarrinho()">
         <span class="material-icons-round">close</span>
       </div>
       <h3 class="h5 black-color">Armazém JP</h3>
@@ -158,10 +158,11 @@
         <p class="body medium-color">R$ 1,25</p>
       </div>
 
-      <button class="button bg-primary white-color display-flex align-center justify-center mt-8 mb-4 w-100">
+      <a href="pagamento.html"
+        class="button bg-primary white-color display-flex align-center justify-center mt-8 mb-4 w-100">
         <span class="mr-12" style="font-size: 18px;">$</span>
         Finalizar pedido
-      </button>
+      </a>
 
     </footer>
 
@@ -201,7 +202,7 @@
         <span class="material-icons-round primary-color">search</span>
       </button>
 
-      <button class="icon-button circle bg-primary white-color only-desktop">
+      <button class="icon-button circle bg-primary white-color only-desktop" onclick="openCarrinho()">
         <span class="material-icons-round">shopping_cart</span>
       </button>
 
@@ -507,7 +508,12 @@
       setTimeout(() => {
         document.querySelector('.black-screen').classList.remove('fade-out');
       }, 400);
-
+    }
+    function closeCarrinho() {
+      document.querySelector('.carrinho').classList.toggle('display-none');
+    }
+    function openCarrinho() {
+      document.querySelector('.carrinho').classList.toggle('display-none');
     }
   </script>
 
