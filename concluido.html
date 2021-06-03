@@ -56,15 +56,32 @@
     <div class="content-container pagamento display-flex align-center justify-center bg-2">
         <!--área de conteúdos-->
 
-        <div class="container-extra pagamento">
+        <div
+            class="container-extra pagamento                                                                                                                                                                   ">
 
             <h2 class="only-desktop h5 medium-color mb-16">Pagamento</h2>
 
-            <div class="auxiliar-botao display-none">
+            <div style="margin-top: 114px;" class="display-flex flex-column align-center">
+                <span style="font-size: 60px;" class="material-icons-round primary-color">check_circle</span>
+
+                <div style="max-width: 232px;text-align: center; margin-top: 22px;">
+                    <p class="h6 primary-color" style="font-weight: 400;">Seu pedido foi conclúido com
+                        sucesso.</p>
+                </div>
+
+
+            </div>
+
+            <div class="auxiliar-botao">
+                <a href="pagamento.html"
+                    style="position: absolute; bottom: 60px; left: 16px; width: 91%;justify-content: center;"
+                    type="submit" class="bg-primary white-color button mt-16 only-desktop">
+                    Novo pedido
+                </a>
                 <a href="pagamento.html"
                     style="position: absolute; bottom: 16px; left: 16px; width: 91%;justify-content: center;"
-                    type="submit" class="bg-primary white-color button mt-16 only-desktop">
-                    concluir
+                    type="submit" class="bg-transparent primary-color button mt-16 only-desktop">
+                    voltar para home
                 </a>
             </div>
 
@@ -80,16 +97,6 @@
             concluir
         </a>
     </div>
-
-    <script>
-        function checarSeSelecionado() {
-            document.querySelectorAll(".container-extra .card input").forEach(i => {
-                if (i.checked) {
-                    document.querySelector(".auxiliar-botao").classList.remove('display-none')
-                }
-            })
-        }
-    </script>
 
 </body>
 
