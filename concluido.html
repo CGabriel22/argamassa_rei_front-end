@@ -56,15 +56,37 @@
     <div class="content-container pagamento display-flex align-center justify-center bg-2">
         <!--área de conteúdos-->
 
-        <div class="container-extra pagamento">
+        <div
+            class="container-extra pagamento                                                                                                                                                                   ">
 
             <h2 class="only-desktop h5 medium-color mb-16">Pagamento</h2>
 
-            <div class="auxiliar-botao display-none">
-                <a href="pagamento.html"
+            <div style="margin-top: 114px;" class="display-flex flex-column align-center">
+                <span style="font-size: 60px;" class="material-icons-round primary-color">check_circle</span>
+
+                <div style="max-width: 232px;text-align: center; margin-top: 22px;">
+                    <p class="h6 primary-color" style="font-weight: 400;">Seu pedido foi conclúido com
+                        sucesso.</p>
+                </div>
+
+                <a href="pagamento.html" style="width: 68%;justify-content: center;" type="submit"
+                    class="bg-transparent primary-color outline button mt-16 display-flex">
+                    <span class="material-icons-round mr-8">share</span>
+                    Via do cliente
+                </a>
+
+            </div>
+
+            <div class="auxiliar-botao">
+                <a href="novoPedido.html"
+                    style="position: absolute; bottom: 60px; left: 16px; width: 91%;justify-content: center;"
+                    type="submit" class="bg-primary white-color button mt-16 display-flex">
+                    Novo pedido
+                </a>
+                <a href="home.html"
                     style="position: absolute; bottom: 16px; left: 16px; width: 91%;justify-content: center;"
-                    type="submit" class="bg-primary white-color button mt-16 only-desktop">
-                    concluir
+                    type="submit" class="bg-transparent primary-color button mt-16 display-flex">
+                    voltar para home
                 </a>
             </div>
 
@@ -73,23 +95,6 @@
 
         <!--fim área de conteúdos-->
     </div>
-
-    <div class="no-desktop" style="position: fixed;bottom: 8px;width: 100%; padding: 0px 16px;">
-        <a href="pagamento.html" style="width: 100%;display: flex;justify-content: center;" type="submit"
-            class="bg-primary white-color button mt-16">
-            concluir
-        </a>
-    </div>
-
-    <script>
-        function checarSeSelecionado() {
-            document.querySelectorAll(".container-extra .card input").forEach(i => {
-                if (i.checked) {
-                    document.querySelector(".auxiliar-botao").classList.remove('display-none')
-                }
-            })
-        }
-    </script>
 
 </body>
 
