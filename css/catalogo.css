@@ -407,9 +407,12 @@ input[type=number] {
   z-index: 2;
   overflow: hidden;
   padding-bottom: 143px;
+  border-radius: 0px;
+  background-color: #FAFAFA;
+  padding-top: 88px;
 }
 .carrinho .container-produto {
-  max-height: 322px;
+  max-height: 81%;
   overflow-y: scroll;
 }
 .carrinho .container-produto::-webkit-scrollbar {
@@ -443,6 +446,9 @@ input[type=number] {
     z-index: 2;
     overflow: hidden;
     padding-bottom: 143px;
+    border-radius: 8px;
+    background-color: #fff;
+    padding-top: 12px;
   }
   .carrinho .container-produto {
     max-height: 322px;

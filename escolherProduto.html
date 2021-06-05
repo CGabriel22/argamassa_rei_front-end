@@ -35,12 +35,20 @@
 
   <div class="card carrinho display-none">
 
-    <div class="display-flex align-center">
+    <header style="padding-bottom: 12px;" class="display-flex align-center primary-color bg-white header no-desktop">
+      <button class="icon-button" onclick="closeCarrinho()">
+        <span class="material-icons-round mr-8">arrow_back</span>
+      </button>
+      <h2 class="h4">Carrinho</h2>
+    </header>
+
+    <div class="display-flex align-center only-desktop">
       <div class="icon-button medium-color mr-8" onclick="closeCarrinho()">
         <span class="material-icons-round">close</span>
       </div>
       <h3 class="h5 black-color">Armazém JP</h3>
     </div>
+    <h3 class="h5 black-color no-desktop px-8">Armazém JP</h3>
 
     <div class="px-8 mt-8 mb-16">
       <p class="medium-color body"># 2502 • 23/03/2021</p>
