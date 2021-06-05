@@ -131,6 +131,9 @@ input[type=number] {
   border-radius: 4px;
   cursor: pointer;
 }
+.button.outline {
+  border: 1px solid #2D4037;
+}
 
 .fab {
   padding: 16px;
