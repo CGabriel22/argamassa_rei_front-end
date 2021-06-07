@@ -162,7 +162,10 @@ input[type=number] {
   padding: 8px 16px;
 }
 .table td:nth-child(-n+2) {
-  width: 128px;
+  width: 128px !important;
+}
+.table td:nth-child(-n+3) {
+  width: 193px;
 }
 .table td:last-of-type {
   text-align: right;
@@ -219,6 +222,27 @@ input[type=number] {
   width: 82%;
 }
 
+.status {
+  padding: 0px 4px;
+  border-radius: 4px;
+  width: fit-content;
+}
+.status.recebido {
+  background: rgba(0, 0, 0, 0.6);
+}
+.status.carregado {
+  background: #4982F2;
+}
+.status.entrega {
+  background: #6FD900;
+}
+.status.finalizado {
+  background: #2D4037;
+}
+.status.pendente {
+  background: #F24949;
+}
+
 .header {
   width: 100%;
   min-width: 308px;
@@ -263,6 +287,16 @@ input[type=number] {
 
 .content-container-minhasVendas {
   padding: 93px 16px 0px 16px;
+}
+.content-container-minhasVendas .pedido-footer {
+  position: fixed;
+  width: 91.5%;
+  bottom: 72px;
+  background: #fff;
+  padding: 8px 12px;
+  border: 1px solid rgba(0, 0, 0, 0.15);
+  border-radius: 8px;
+  box-shadow: 0px 32px 60px rgba(0, 0, 0, 0.07), 0px 22.3363px 13.4018px rgba(0, 0, 0, 0.06), 0px 6.6501px 3.99006px rgba(0, 0, 0, 0.04);
 }
 
 .profile-header {
@@ -347,7 +381,6 @@ input[type=number] {
   }
 
   .vendas-table-container {
-    max-width: 886px;
     display: block !important;
     padding: 8px 48px 60px 48px;
   }
