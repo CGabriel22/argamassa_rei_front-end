@@ -7,7 +7,10 @@
   padding: 8px 16px;
 }
 .table td:nth-child(-n+2) {
-  width: 128px;
+  width: 128px !important;
+}
+.table td:nth-child(-n+3) {
+  width: 193px;
 }
 .table td:last-of-type {
   text-align: right;
@@ -62,6 +65,27 @@
 .search-bar input {
   height: 100%;
   width: 82%;
+}
+
+.status {
+  padding: 0px 4px;
+  border-radius: 4px;
+  width: fit-content;
+}
+.status.recebido {
+  background: rgba(0, 0, 0, 0.6);
+}
+.status.carregado {
+  background: #4982F2;
+}
+.status.entrega {
+  background: #6FD900;
+}
+.status.finalizado {
+  background: #2D4037;
+}
+.status.pendente {
+  background: #F24949;
 }
 
 .header {
