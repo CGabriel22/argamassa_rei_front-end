@@ -291,6 +291,10 @@ template {
   margin-bottom: 24px;
 }
 
+.mb-auto {
+  margin-bottom: auto;
+}
+
 .mr-4 {
   margin-right: 4px;
 }
@@ -321,6 +325,10 @@ template {
 
 .mt-16 {
   margin-top: 16px;
+}
+
+.mt-auto {
+  margin-top: auto;
 }
 
 .mt-8 {
