@@ -160,11 +160,12 @@ input[type=number] {
 .table td {
   text-align: left;
   padding: 8px 16px;
+  height: 56px !important;
 }
 .table td:nth-child(-n+2) {
-  width: 128px !important;
+  width: 128px;
 }
-.table td:nth-child(-n+3) {
+.table td:nth-child(3) {
   width: 193px;
 }
 .table td:last-of-type {
@@ -184,7 +185,6 @@ input[type=number] {
 
 .vendas-table-area {
   background-color: #FFFFFF;
-  overflow: hidden;
   border: 1px solid rgba(0, 0, 0, 0.15);
   border-radius: 12px;
 }
@@ -205,6 +205,50 @@ input[type=number] {
   padding: 6px 12px;
   display: flex;
   justify-content: flex-end;
+}
+
+.statusCellAdminHead {
+  width: 229px !important;
+}
+
+.statusCellAdminBody {
+  position: relative;
+}
+.statusCellAdminBody button {
+  position: absolute;
+  left: 177px;
+  bottom: 8px;
+  border-radius: 50%;
+  transition: all 0.4s ease;
+}
+.statusCellAdminBody button:hover {
+  background-color: rgba(0, 0, 0, 0.08);
+}
+
+.statusMenu {
+  position: absolute;
+  top: 55px;
+  left: 0px;
+  width: 229px;
+  border-radius: 4px;
+  background-color: #FFFFFF;
+  border: solid 1px rgba(0, 0, 0, 0.15);
+  z-index: 9999;
+}
+.statusMenu div {
+  padding: 8px 16px;
+}
+.statusMenu div:not(:last-of-type) {
+  border-bottom: solid 1px rgba(0, 0, 0, 0.15);
+  cursor: pointer;
+}
+.statusMenu div:hover {
+  background-color: rgba(0, 0, 0, 0.04);
+  cursor: pointer;
+}
+
+.statusBtnAnimation {
+  transform: rotate(180deg);
 }
 
 .search-bar {
@@ -283,20 +327,6 @@ input[type=number] {
 
 .content-container {
   padding: 93px 16px 136px 16px;
-}
-
-.content-container-minhasVendas {
-  padding: 93px 16px 0px 16px;
-}
-.content-container-minhasVendas .pedido-footer {
-  position: fixed;
-  width: 91.5%;
-  bottom: 72px;
-  background: #fff;
-  padding: 8px 12px;
-  border: 1px solid rgba(0, 0, 0, 0.15);
-  border-radius: 8px;
-  box-shadow: 0px 32px 60px rgba(0, 0, 0, 0.07), 0px 22.3363px 13.4018px rgba(0, 0, 0, 0.06), 0px 6.6501px 3.99006px rgba(0, 0, 0, 0.04);
 }
 
 .profile-header {

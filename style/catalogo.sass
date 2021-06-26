@@ -61,22 +61,24 @@
   .product-card
     float: left
 
-  .product-card:not(:last-of-type)
-    margin-right: 16px
-
   .clear
     clear: both
 
   .catalog-desktop
-    margin-right: 16px
     flex-direction: column
     border-radius: 12px
     width: 100%
+    .product-card
+      margin: 0
+      flex-grow: 1
+      flex-shrink: 1
+      flex-basis: auto
     article h3
       margin: 16px 0 16px 0
       padding: 0 16px
 
   .product-container
+    gap: 16px
     padding: 0 16px
 
 article:not(:last-of-type)

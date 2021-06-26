@@ -539,19 +539,20 @@ input[type=number] {
     float: left;
   }
 
-  .product-card:not(:last-of-type) {
-    margin-right: 16px;
-  }
-
   .clear {
     clear: both;
   }
 
   .catalog-desktop {
-    margin-right: 16px;
     flex-direction: column;
     border-radius: 12px;
     width: 100%;
+  }
+  .catalog-desktop .product-card {
+    margin: 0;
+    flex-grow: 1;
+    flex-shrink: 1;
+    flex-basis: auto;
   }
   .catalog-desktop article h3 {
     margin: 16px 0 16px 0;
@@ -559,6 +560,7 @@ input[type=number] {
   }
 
   .product-container {
+    gap: 16px;
     padding: 0 16px;
   }
 }
