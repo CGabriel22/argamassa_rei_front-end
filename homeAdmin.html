@@ -1,0 +1,397 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+  <!-- meta tags essenciais -->
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!-- meta tags de SEO -->
+  <meta name="description" content="descrição">
+  <meta name="keywords" content="argamassa rei, pdv, Olinda, Pernambuco, argamassa rei pdv">
+  <meta name="author" content="Carlos Gabriel, Gabriel França">
+  <!-- import das fontes -->
+  <link rel="preconnect" href="https://fonts.gstatic.com">
+  <link rel="preload" href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700;900&display=swap"
+    as="style" onload="this.onload=null;this.rel='stylesheet'">
+  <noscript>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700;900&display=swap">
+  </noscript>
+  <!-- import da fonte de ícones material icons -->
+  <link href="https://fonts.googleapis.com/css?family=Material+Icons|Material+Icons+Round&display=swap"
+    rel="stylesheet">
+  <!-- titulo da página -->
+  <title>Bem vindo(a) - Argamassa Rei PDV Administrador</title>
+  <!-- favicon -->
+  <link rel="shortcut icon" href="img/favicon.svg" type="image/x-icon">
+  <!-- estilos -->
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="css/home.css">
+  <link rel="stylesheet" href="css/calendar.css">
+  <script src="js/statusMenu.js" defer></script>
+</head>
+
+<body>
+
+  <header class="header bg-white">
+    <!--inicio do header-->
+    <div class="header-container">
+      <!--inicio do header container-->
+
+      <div class="title-container">
+        <!--inicio do title container-->
+        <div class="title">
+          <h1 class="h4 primary-color">Argamassa Rei</h1>
+          <!--title text-->
+          <div class="tag bg-primary-2">
+            <!--tag-->
+            <p class="body bold secondary-color">PDV</p>
+          </div>
+          <!--fim da tag-->
+        </div>
+        <!--fim do title-->
+
+      </div>
+      <!--fim do title container-->
+
+      <nav class="nav desktop-nav">
+        <!--inicio da nav-->
+        <div class="nav-container">
+          <!--inicio do nav container-->
+          <ul>
+            <li>
+              <!--Home-->
+              <a href="home.html" name="0" class="active">
+                <span class="material-icons-round">home</span>
+                <p>Home</p>
+              </a>
+            </li>
+            <li>
+              <!--Catálogo-->
+              <a href="catalogo.html" name="1" class="">
+                <span class="material-icons-round">dashboard</span>
+                <p>Catálogo</p>
+              </a>
+            </li>
+            <li>
+              <!--Clientes-->
+              <a href="clientes.html" name="2" class="">
+                <span class="material-icons-round">person_pin</span>
+                <p>Clientes</p>
+              </a>
+            </li>
+            <li>
+              <!--Perfil-->
+              <a href="perfil.html" name="3" class="">
+                <span class="material-icons-round">person</span>
+                <p>Perfil</p>
+              </a>
+            </li>
+          </ul>
+        </div>
+        <!--fim do nav container-->
+      </nav>
+      <!--fim da nav-->
+
+    </div>
+    <!--fim do header container-->
+
+  </header>
+  <!--fim do header-->
+
+  <div class="content-container bg-2">
+    <!--área de conteúdos-->
+
+    <a href="novoPedido.html" style="width: 100%;padding: 46px 0px;" class="button home-button white-color bg-primary">
+      <span class="material-icons-round">add_circle_outline</span>
+      <p style="font-weight: 700;">novo pedido</p>
+    </a>
+
+    <h2 class="h6 medium-color mt-16 mb-16 no-desktop">Ações rápidas</h2>
+
+    <a href="novoClienteDados.html" style="padding: 16px 0px;background-color: rgba(73, 130, 242, 1);"
+      class="button home-button white-color mb-8">
+      <span class="material-icons-round">person_add</span>
+      <p style="font-weight: 700;">Novo cliente</p>
+    </a>
+
+    <a href="minhasVendas.html" style="padding: 16px 0px;background-color: rgba(227, 175, 41, 1);"
+      class="button home-button white-color mb-8 no-desktop">
+      <span class="material-icons-round">point_of_sale</span>
+      <p style="font-weight: 700;">minhas vendas</p>
+    </a>
+
+    <!--fim área de conteúdos-->
+  </div>
+
+  <section class="vendas-table-container display-none">
+
+    <div class="vendas-table-area">
+
+      <header class="display-flex justify-between">
+        <h2 class="h5 medium-color">Minhas vendas</h2>
+
+        <div class="display-flex">
+
+          <button class="icon-button openCalendarButton mr-12">
+            <span class="material-icons-round primary-color">calendar_today</span>
+          </button>
+
+          <div class="search-bar">
+
+            <button class="icon-button">
+              <span class="material-icons-round medium-color">search</span>
+            </button>
+
+            <input type="text" class="medium-color body-2" placeholder="Procurando um cliente?">
+
+          </div>
+
+        </div>
+    
+
+      </header>
+
+      <div class="calendar-container">
+        <div id="calendar"></div>
+        <form action="" class="display-none">
+          <input type="text" id="dateByCalendar1">
+          <input type="text" id="dateByCalendar2">
+        </form>
+      </div>
+
+      <table class="table">
+        <thead>
+          <tr class="bg">
+            <td>Código</td>
+            <td>Data</td>
+            <td class="statusCellAdminHead">Status</td>
+            <td>Vendedor</td>
+            <td>Cliente</td>
+            <td style="padding-right: 112px;">Valor total</td>
+          </tr>
+        </thead>
+
+        <tbody>
+          <tr class="pedido">
+            <td># 2502</td>
+            <td>23/03/2021</td>
+            <td class="statusCellAdminBody">
+              <div class="status recebido white-color body-2"> Recebido </div>
+              <button id="statusMenuTrigger01" class="icon-button statusMenuTrigger material-icons-round">expand_more</button>
+              <div class="statusMenu elevation24dp display-none">
+                <div><p class="status recebido white-color body-2"> Recebido </p> </div>
+                <div><p class="status carregado white-color body-2"> Sendo carregado </p></div>
+                <div><p class="status entrega white-color body-2"> Saiu para entrega </p></div>
+                <div><p class="status finalizado white-color body-2"> Finalizado </p></div>
+                <div><p class="status pendente white-color body-2"> Pagamento pendente </p></div>
+                </div>
+            </td>
+            <td>Everton Ribeiro</td>
+            <td>Ingrid Maria Silva</td>
+            <td>
+              R$ 753,00
+              <a href="pedido.html" class="ml-32 primary-color underline medium">ver mais</a>
+            </td>
+          </tr>
+
+          <tr class="pedido">
+            <td># 2502</td>
+            <td>23/03/2021</td>
+            <td class="statusCellAdminBody">
+              <div class="status carregado white-color body-2"> Sendo carregado </div>
+              <button id="statusMenuTrigger02" class="icon-button statusMenuTrigger material-icons-round">expand_more</button>
+              <div class="statusMenu elevation24dp display-none">
+                <div><p class="status recebido white-color body-2"> Recebido </p> </div>
+                <div><p class="status carregado white-color body-2"> Sendo carregado </p></div>
+                <div><p class="status entrega white-color body-2"> Saiu para entrega </p></div>
+                <div><p class="status finalizado white-color body-2"> Finalizado </p></div>
+                <div><p class="status pendente white-color body-2"> Pagamento pendente </p></div>
+                </div>
+            </td>
+            <td>Everton Ribeiro</td>
+            <td>Ingrid Maria Silva</td>
+            <td>
+              R$ 1753,00
+              <a href="#" class="ml-32 primary-color underline medium">ver mais</a>
+            </td>
+          </tr>
+
+          <tr class="pedido">
+            <td># 2502</td>
+            <td>23/03/2021</td>
+            <td class="statusCellAdminBody">
+              <div class="status entrega white-color body-2"> Saiu para entrega </div>
+              <button id='statusMenuTrigger03' class="icon-button statusMenuTrigger material-icons-round">expand_more</button>
+              <div class="statusMenu elevation24dp display-none">
+                <div><p class="status recebido white-color body-2"> Recebido </p> </div>
+                <div><p class="status carregado white-color body-2"> Sendo carregado </p></div>
+                <div><p class="status entrega white-color body-2"> Saiu para entrega </p></div>
+                <div><p class="status finalizado white-color body-2"> Finalizado </p></div>
+                <div><p class="status pendente white-color body-2"> Pagamento pendente </p></div>
+                </div>
+            </td>
+            <td>Everton Ribeiro</td>
+            <td>Ingrid Maria Silva</td>
+            <td>
+              R$ 753,00
+              <a href="#" class="ml-32 primary-color underline medium">ver mais</a>
+            </td>
+          </tr>
+
+          <tr class="pedido">
+            <td># 2502</td>
+            <td>23/03/2021</td>
+            <td class="statusCellAdminBody">
+              <div class="status finalizado white-color body-2"> Finalizado </div>
+              <button id='statusMenuTrigger04' class="icon-button statusMenuTrigger material-icons-round">expand_more</button>
+              <div class="statusMenu elevation24dp display-none">
+                <div><p class="status recebido white-color body-2"> Recebido </p> </div>
+                <div><p class="status carregado white-color body-2"> Sendo carregado </p></div>
+                <div><p class="status entrega white-color body-2"> Saiu para entrega </p></div>
+                <div><p class="status finalizado white-color body-2"> Finalizado </p></div>
+                <div><p class="status pendente white-color body-2"> Pagamento pendente </p></div>
+                </div>
+            </td>
+            <td>Everton Ribeiro</td>
+            <td>Ingrid Maria Silva</td>
+            <td>
+              R$ 1753,00
+              <a href="#" class="ml-32 primary-color underline medium">ver mais</a>
+            </td>
+          </tr>
+
+          <tr class="pedido">
+            <td># 2502</td>
+            <td>23/03/2021</td>
+            <td class="statusCellAdminBody">
+              <div class="status pendente white-color body-2"> Pagamento pendente </div>
+              <button id='statusMenuTrigger05' class="icon-button statusMenuTrigger material-icons-round">expand_more</button>
+              <div class="statusMenu elevation24dp display-none">
+                <div><p class="status recebido white-color body-2"> Recebido </p> </div>
+                <div><p class="status carregado white-color body-2"> Sendo carregado </p></div>
+                <div><p class="status entrega white-color body-2"> Saiu para entrega </p></div>
+                <div><p class="status finalizado white-color body-2"> Finalizado </p></div>
+                <div><p class="status pendente white-color body-2"> Pagamento pendente </p></div>
+                </div>
+            </td>
+            <td>Everton Ribeiro</td>
+            <td>Ingrid Maria Silva</td>
+            <td>
+              R$ 1753,00
+              <a href="#" class="ml-32 primary-color underline medium">ver mais</a>
+            </td>
+          </tr>
+
+          <tr class="pedido">
+            <td># 2502</td>
+            <td>23/03/2021</td>
+            <td class="statusCellAdminBody">
+              <div class="status carregado white-color body-2"> Sendo carregado </div>
+              <button id='statusMenuTrigger06' class="icon-button statusMenuTrigger material-icons-round">expand_more</button>
+              <div class="statusMenu elevation24dp display-none">
+                <div><p class="status recebido white-color body-2"> Recebido </p> </div>
+                <div><p class="status carregado white-color body-2"> Sendo carregado </p></div>
+                <div><p class="status entrega white-color body-2"> Saiu para entrega </p></div>
+                <div><p class="status finalizado white-color body-2"> Finalizado </p></div>
+                <div><p class="status pendente white-color body-2"> Pagamento pendente </p></div>
+                </div>
+            </td>
+            <td>Everton Ribeiro</td>
+            <td>Ingrid Maria Silva</td>
+            <td>
+              R$ 753,00
+              <a href="#" class="ml-32 primary-color underline medium">ver mais</a>
+            </td>
+          </tr>
+
+
+        </tbody>
+
+      </table>
+
+      <footer>
+        <div class="display-flex align-center">
+          <button class="icon-button mr-8">
+            <span class="material-icons-round primary-color">keyboard_arrow_left</span>
+          </button>
+          <p class="medium-color body">1-10 de 128</p>
+          <button class="icon-button ml-8">
+            <span class="material-icons-round primary-color">keyboard_arrow_right</span>
+          </button>
+        </div>
+      </footer>
+
+    </div>
+
+  </section>
+
+
+  <nav class="nav">
+    <!--inicio da nav-->
+    <div class="nav-container bg-primary">
+      <!--inicio do nav container-->
+      <ul>
+        <li>
+          <!--Home-->
+          <a href="home.html" class="active">
+            <span class="material-icons-round">home</span>
+            <p>Home</p>
+          </a>
+        </li>
+        <li>
+          <!--Catálogo-->
+          <a href="catalogo.html">
+            <span class="material-icons-round">dashboard</span>
+            <p>Catálogo</p>
+          </a>
+        </li>
+        <li>
+          <!--Clientes-->
+          <a href="clientes.html">
+            <span class="material-icons-round">person_pin</span>
+            <p>Clientes</p>
+          </a>
+        </li>
+        <li>
+          <!--Perfil-->
+          <a href="perfil.html">
+            <span class="material-icons-round">person</span>
+            <p>Perfil</p>
+          </a>
+        </li>
+      </ul>
+    </div>
+    <!--fim do nav container-->
+  </nav>
+
+  <script src="js/calendar.js"></script>
+  <script>
+
+    function closeCalendar() {
+      document.querySelector('.calendar-container').classList.remove('open');
+    }
+
+    function submitCalendar() {
+      alert(`filtrar de ${document.querySelector('#dateByCalendar1').value} até ${document.querySelector('#dateByCalendar2').value}`);
+    }
+
+    ConstructCalendar();
+    initCalendar();
+    ifCancel(closeCalendar);
+    ifOk(submitCalendar);
+
+    document.querySelector('.openCalendarButton').addEventListener('click', e => {
+      if (!document.querySelector('.calendar-container').matches('.open')) {
+        document.querySelector('.calendar-container').classList.add('open');
+      } else {
+        document.querySelector('.calendar-container').classList.remove('open');
+      }
+
+    });
+
+  </script>
+
+</body>
+
+</html>

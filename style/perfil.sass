@@ -39,18 +39,6 @@
 .content-container
   padding: 93px 16px 136px 16px
 
-.content-container-minhasVendas
-  padding: 93px 16px 0px 16px
-  .pedido-footer
-    position: fixed
-    width: 91.5%
-    bottom: 72px
-    background: #fff
-    padding: 8px 12px
-    border: 1px solid colors.$stroke
-    border-radius: 8px
-    box-shadow: 0px 32px 60px rgba(0, 0, 0, 0.07), 0px 22.3363px 13.4018px rgba(0, 0, 0, 0.06), 0px 6.6501px 3.99006px rgba(0, 0, 0, 0.04)
-
 .profile-header
   display: flex
   .title
@@ -134,3 +122,20 @@
     border: 1px solid colors.$stroke
     border-radius: 8px
     padding: 16px
+
+  .content-container-minhasVendas
+    background-color: colors.$surface_color
+    padding: 16px
+    max-width: 360px
+    border: solid 1px colors.$stroke
+    border-radius: 12px
+    margin-left: 48px
+    height: fit-content
+    .pedido-footer
+      box-shadow: none
+
+  .productScrollArea
+    overflow-y: scroll
+    height: 473px
+    margin-bottom: 16px
+    padding-right: 8px

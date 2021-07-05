@@ -6,9 +6,10 @@
   td
     text-align: left
     padding: 8px 16px
+    height: 56px !important
   td:nth-child(-n+2)
-    width: 128px!important
-  td:nth-child(-n+3)
+    width: 128px
+  td:nth-child(3)
     width: 193px
   td:last-of-type
     text-align: right
@@ -24,7 +25,6 @@
 
 .vendas-table-area
   background-color: colors.$surface_color
-  overflow: hidden
   border: 1px solid colors.$stroke
   border-radius: 12px
   header
@@ -41,3 +41,40 @@
     padding: 6px 12px
     display: flex
     justify-content: flex-end
+
+  // Admin styles
+
+.statusCellAdminHead
+   width: 229px !important
+
+.statusCellAdminBody
+  position: relative
+  button
+    position: absolute
+    left: 177px
+    bottom: 8px
+    border-radius: 50%
+    transition: all .4s ease
+  button:hover
+    background-color: rgba(0, 0, 0, 0.08)
+
+.statusMenu
+  position: absolute
+  top: 55px
+  left: 0px
+  width: 229px
+  border-radius: 4px
+  background-color: colors.$surface-color
+  border: solid 1px colors.$stroke
+  z-index: 9999
+  div
+    padding: 8px 16px
+  div:not(:last-of-type)
+    border-bottom: solid 1px colors.$stroke
+    cursor: pointer
+  div:hover
+    background-color: colors.$hover
+    cursor: pointer
+
+.statusBtnAnimation
+  transform: rotate(180deg)

@@ -1,0 +1,44 @@
+@use 'colors'
+@use 'strokes'
+
+// order Page PDF
+
+.orderPageHeader
+    display: flex
+    align-items: center
+    border-bottom: solid 1px colors.$stroke
+    margin-bottom: 16px
+    & > div:first-of-type
+        flex-grow: 1
+
+.orderCellGrid
+    border: solid 1px colors.$black
+
+.orderCellRow
+    display: flex
+    
+.orderCell
+    padding: 4px 8px
+    flex-grow: 1
+    p:first-of-type
+        font-weight: 500
+
+.orderDetailProducts, .orderDetailHeader
+    div:nth-of-type(1)
+        flex-grow: 1
+        min-width: 280px
+    div:nth-of-type(n+2):nth-of-type(-n+4)
+        min-width: 180px
+        max-width: 220px
+    .orderCell p
+        font-weight: 400
+
+.pageFooterTitle, .pageFooterInfo
+    div:nth-of-type(1)
+         min-width: 280px
+         text-align: right
+    div:nth-of-type(2)
+         max-width: 124px
+         text-align: right
+
+    
