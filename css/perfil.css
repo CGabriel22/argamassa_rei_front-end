@@ -433,6 +433,26 @@ input[type=number] {
     border-radius: 8px;
     padding: 16px;
   }
+
+  .content-container-minhasVendas {
+    background-color: #FFFFFF;
+    padding: 16px;
+    max-width: 360px;
+    border: solid 1px rgba(0, 0, 0, 0.15);
+    border-radius: 12px;
+    margin-left: 48px;
+    height: fit-content;
+  }
+  .content-container-minhasVendas .pedido-footer {
+    box-shadow: none;
+  }
+
+  .productScrollArea {
+    overflow-y: scroll;
+    height: 473px;
+    margin-bottom: 16px;
+    padding-right: 8px;
+  }
 }
 
 /*# sourceMappingURL=perfil.css.map */
