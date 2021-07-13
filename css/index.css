@@ -159,9 +159,10 @@ input[type=number] {
   align-items: center;
   justify-content: center;
   cursor: pointer;
+  border-radius: 50px;
 }
-.icon-button.circle {
-  border-radius: 50%;
+.icon-button:hover {
+  background-color: rgba(0, 0, 0, 0.04);
 }
 
 @media only screen and (min-width: 768px) {

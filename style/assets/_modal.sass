@@ -1,6 +1,6 @@
 @use 'colors'
 
-.modal
+.modal, .modalNewItem
   width: 100%
   background-color: #fff
   border-radius: 24px 24px 0px 0px
@@ -11,6 +11,7 @@
   text-align: center
   transform: translateY(100%)
   transition: all .4s ease
+  animation: open-modal .4s ease
   &.open
     transform: translateY(0%)
 
@@ -47,7 +48,7 @@
     transform: translateY(100%)
 
 @media only screen and ( min-width: 768px )
-  .modal
+  .modal,  .modalNewItem
     width: 100%
     max-width: 360px
     border-radius: 8px

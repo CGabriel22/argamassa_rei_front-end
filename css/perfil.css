@@ -145,6 +145,16 @@ input[type=number] {
   margin-left: 8px;
 }
 
+.newCategoryItem {
+  display: flex;
+  border-top: 1px solid rgba(0, 0, 0, 0.15);
+  padding: 4px 12px 3px 16px;
+}
+.newCategoryItem input {
+  width: 168px;
+  margin-right: 8px;
+}
+
 .client-list:not(:last-of-type), .catalog-list:not(:last-of-type) {
   border-bottom: 1px solid rgba(0, 0, 0, 0.15);
 }
