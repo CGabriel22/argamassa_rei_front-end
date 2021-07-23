@@ -67,12 +67,12 @@
   background-color: colors.$surface-color
   border: solid 1px colors.$stroke
   z-index: 9999
-  div
+  div, p
     padding: 8px 16px
-  div:not(:last-of-type)
+  div:not(:last-of-type), p:not(:last-of-type)
     border-bottom: solid 1px colors.$stroke
     cursor: pointer
-  div:hover
+  div:hover, p:hover
     background-color: colors.$hover
     cursor: pointer
 

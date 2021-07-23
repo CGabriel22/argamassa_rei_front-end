@@ -55,7 +55,7 @@
   }
 }
 @media only screen and (min-width: 768px) {
-  .modal, .modalNewItem {
+  .modal {
     width: 100%;
     max-width: 360px;
     border-radius: 8px;
@@ -64,11 +64,41 @@
     transform: translateY(0%);
     transition: all 0.4s ease;
     border: 1px solid rgba(0, 0, 0, 0.15);
-    box-shadow: 0px 32px 60px rgba(0, 0, 0, 0.07), 0px 22.3363px 13.4018px rgba(0, 0, 0, 0.06), 0px 6.6501px 3.99006px rgba(0, 0, 0, 0.04);
     display: none;
   }
-  .modal.open, .modalNewItem.open {
+  .modal.open {
     display: block;
+  }
+
+  .modalNewItem {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    max-width: 360px;
+    border-radius: 8px;
+    bottom: 48px;
+    right: 48px;
+    transform: translateY(0%);
+    transition: all 0.4s ease;
+    border: 1px solid rgba(0, 0, 0, 0.15);
+    display: none;
+    padding-bottom: 16px;
+  }
+  .modalNewItem h3 {
+    line-height: 40px;
+    text-align: start;
+  }
+  .modalNewItem .image-area {
+    display: flex;
+    flex-direction: column;
+    margin-top: 8px;
+    height: 144px;
+  }
+  .modalNewItem.open {
+    display: block;
+  }
+  .modalNewItem .icon-button {
+    transition: all 0.4s ease;
   }
 }
 .black-screen {
@@ -235,6 +265,40 @@ input[type=number]::-webkit-inner-spin-button {
 input[type=number] {
   -moz-appearance: textfield;
   appearance: textfield;
+}
+
+.inputData {
+  position: relative;
+  display: flex;
+  align-items: center;
+  width: 100%;
+  height: 56px;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.15);
+  background-color: #F5F5F5;
+  padding: 8px 12px 8px 16px;
+  border-top-left-radius: 4px;
+  border-top-right-radius: 4px;
+}
+.inputData p {
+  text-align: start;
+}
+.inputData .icon-button {
+  display: block;
+}
+.inputData .statusMenu {
+  width: 100%;
+}
+.inputData .statusMenu p {
+  line-height: 23px;
+}
+
+.duoInputLine {
+  display: flex;
+  flex-direction: row;
+  gap: 16px;
+}
+.duoInputLine div {
+  width: 100%;
 }
 
 .h1 {
@@ -494,6 +558,104 @@ input[type=number] {
   justify-content: center;
 }
 
+.table {
+  border-collapse: collapse;
+  width: 100%;
+}
+.table td {
+  text-align: left;
+  padding: 8px 16px;
+  height: 56px !important;
+}
+.table td:nth-child(-n+2) {
+  width: 128px;
+}
+.table td:nth-child(3) {
+  width: 193px;
+}
+.table td:last-of-type {
+  text-align: right;
+  width: 208px;
+}
+.table tr {
+  background-color: #FFFFFF;
+  border-top: 1px solid rgba(0, 0, 0, 0.15);
+}
+.table tr:hover {
+  background-color: rgba(0, 0, 0, 0.04);
+}
+.table tr:last-of-type {
+  border-bottom: 1px solid rgba(0, 0, 0, 0.15);
+}
+
+.vendas-table-area {
+  background-color: #FFFFFF;
+  border: 1px solid rgba(0, 0, 0, 0.15);
+  border-radius: 12px;
+}
+.vendas-table-area header {
+  padding: 20px 16px;
+  align-items: center;
+}
+.vendas-table-area thead td {
+  padding: 16px;
+  color: rgba(0, 0, 0, 0.87);
+  font-weight: 500;
+}
+.vendas-table-area tbody td {
+  padding: 14px;
+  color: rgba(0, 0, 0, 0.6);
+}
+.vendas-table-area footer {
+  padding: 6px 12px;
+  display: flex;
+  justify-content: flex-end;
+}
+
+.statusCellAdminHead {
+  width: 229px !important;
+}
+
+.statusCellAdminBody {
+  position: relative;
+}
+.statusCellAdminBody button {
+  position: absolute;
+  left: 177px;
+  bottom: 8px;
+  border-radius: 50%;
+  transition: all 0.4s ease;
+}
+.statusCellAdminBody button:hover {
+  background-color: rgba(0, 0, 0, 0.08);
+}
+
+.statusMenu {
+  position: absolute;
+  top: 55px;
+  left: 0px;
+  width: 229px;
+  border-radius: 4px;
+  background-color: #FFFFFF;
+  border: solid 1px rgba(0, 0, 0, 0.15);
+  z-index: 9999;
+}
+.statusMenu div, .statusMenu p {
+  padding: 8px 16px;
+}
+.statusMenu div:not(:last-of-type), .statusMenu p:not(:last-of-type) {
+  border-bottom: solid 1px rgba(0, 0, 0, 0.15);
+  cursor: pointer;
+}
+.statusMenu div:hover, .statusMenu p:hover {
+  background-color: rgba(0, 0, 0, 0.04);
+  cursor: pointer;
+}
+
+.statusBtnAnimation {
+  transform: rotate(180deg);
+}
+
 .header {
   width: 100%;
   min-width: 308px;
@@ -587,6 +749,9 @@ input[type=number] {
     grid-template-columns: repeat(auto-fill, minmax(192px, auto));
     gap: 16px;
     padding: 0 16px;
+  }
+  .product-container .newItemContainer {
+    height: 270px;
   }
   .product-container .newItemContainer:hover {
     background-color: rgba(0, 0, 0, 0.04);

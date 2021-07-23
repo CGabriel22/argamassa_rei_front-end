@@ -29,6 +29,7 @@
   <link rel="stylesheet" href="css/catalogo.css">
   <!--Script-->
   <script src="/js/newItems.js" defer></script>
+  <script src="/js/menuExpanded.js" defer></script>
 </head>
 
 <body>
@@ -406,7 +407,7 @@
   </div>
   <!--fim da área principal do catalogo content-->
 
-  <div class="modal">
+  <div class="modal elevation24dp">
 
     <button class="icon-button" onclick="closeModal()">
       <span class="material-icons-round medium-color">close</span>
@@ -418,7 +419,8 @@
       <p class="body-2 medium black">nome do produto</p>
       <p class="body-2 medium medium-color">R$ 5,00</p>
       <div class="product-info center-items-horizontal medium-color">
-        <p>Saco</p><span>‣</span>
+        <p>Saco</p>
+        <span>‣</span>
         <p>20kg</p>
       </div>
     </div>
@@ -429,26 +431,82 @@
 
   </div>
 
-  <div class="modalNewItem">
+  <div class="modalNewItem elevation24dp">
 
     <button class="icon-button" onclick="closeModalNewItem()">
       <span class="material-icons-round medium-color">close</span>
     </button>
+
+    <h3 class="h5 medium-color">Argamassas</h3>
+
     <div class="image-area">
-      <p class="low-color">Adicionar imagem</p>
+      <span class="material-icons-round primary-color">photo_library</span>
+      <p class="button primary-color">Adicionar imagem</p>
     </div>
-    <div class="mt-16">
-      <p class="body-2 medium black">nome do produto</p>
-      <p class="body-2 medium medium-color">R$ 5,00</p>
-      <div class="product-info center-items-horizontal medium-color">
-        <p>Saco</p><span>‣</span>
-        <p>20kg</p>
+
+    <div>
+
+      <div class="forms active mb-8">
+        <!--input-->
+        <input type="text" class="bg-white medium-color" name="login" autocomplete="off" required>
+        <label for="login" class="label-name">
+          <span class="content-name body">Nome do produto</span>
+        </label>
       </div>
+      <!--fim do input-->
+
+      <div class="forms active mb-8">
+        <!--input-->
+        <input type="text" class="bg-white medium-color" name="login" autocomplete="off" required>
+        <label for="login" class="label-name">
+          <span class="content-name body">Valor do produto</span>
+        </label>
+      </div>
+      <!--fim do input-->
+
+      <div class="inputData mb-16">
+        <p class="body rolinha">Embalagem</p>
+        <button id="abobora" class="icon-button material-icons-round menuActivator">expand_more</button>
+        <div class="statusMenu display-none">
+          <p class="body">Saco</p>
+          <p class="body">Garrafa</p>
+          <p class="body">Balde</p>
+        </div>
+      </div>
+
+      <div class="duoInputLine">
+        <div class="forms active mb-8">
+          <!--input-->
+          <input type="text" class="bg-white medium-color" name="login" autocomplete="off" required>
+          <label for="login" class="label-name">
+            <span class="content-name body">Quantidade</span>
+          </label>
+        </div>
+        <!--fim do input-->
+        <div class="inputData mb-16">
+          <p class="body">Unidade</p>
+          <button class="icon-button material-icons-round menuActivator">expand_more</button>
+          <div class="statusMenu display-none">
+            <p class="body">Quilogramas</p>
+            <p class="body">Litros</p>
+          </div>
+        </div>
+      </div>
+
+       <div class="forms active mb-8">
+          <!--input-->
+          <input type="text" class="bg-white medium-color" name="login" autocomplete="off" required>
+          <label for="login" class="label-name">
+            <span class="content-name body">Descrição do produto</span>
+          </label>
+        </div>
+        <!--fim do input-->
+
     </div>
-    <p class="body medium-color mt-16">
-      Argamassa ACI é indicada para aplicações internas, em pisos de alvenaria, ela tem ótima resistência e
-      durabilidade, melhor opção para a sua obra.
-    </p>
+
+    <a href="#" class="button display-flex align-center justify-center bg-primary white-color mt-16">
+      Adicionar Produto
+    </a>
 
   </div>
 

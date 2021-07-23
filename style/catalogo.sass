@@ -8,6 +8,7 @@
 @use 'assets/lists'
 @use 'assets/carrinho'
 @use 'assets/aligns'
+@use 'assets/table'
 
 .header
   width: 100%
@@ -87,6 +88,9 @@
     grid-template-columns: repeat(auto-fill, minmax(192px,auto))
     gap: 16px
     padding: 0 16px
+    & .newItemContainer
+       height: 270px
     & .newItemContainer:hover
       background-color: colors.$hover
       cursor: pointer
+      
