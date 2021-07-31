@@ -203,6 +203,10 @@ template {
   text-decoration-line: line-through;
 }
 
+.fontSize72 {
+  font-size: 72px;
+}
+
 .black-color {
   color: rgba(0, 0, 0, 0.87);
 }
@@ -380,9 +384,10 @@ template {
   align-items: center;
   justify-content: center;
   cursor: pointer;
+  border-radius: 50px;
 }
-.icon-button.circle {
-  border-radius: 50%;
+.icon-button:hover {
+  background-color: rgba(0, 0, 0, 0.04);
 }
 
 @media only screen and (min-width: 768px) {
@@ -685,6 +690,12 @@ template {
 
 .elevation24dp {
   box-shadow: 0px 3px 13px rgba(0, 0, 0, 0.039), 0px 10.5px 36px rgba(0, 0, 0, 0.19);
+}
+
+.centralized {
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
 html, body {

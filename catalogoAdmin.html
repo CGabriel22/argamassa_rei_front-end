@@ -1,0 +1,585 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+  <!-- meta tags essenciais -->
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!-- meta tags de SEO -->
+  <meta name="description" content="descrição">
+  <meta name="keywords" content="argamassa rei, pdv, Olinda, Pernambuco, argamassa rei pdv">
+  <meta name="author" content="Carlos Gabriel, Gabriel França">
+  <!-- import das fontes -->
+  <link rel="preconnect" href="https://fonts.gstatic.com">
+  <link rel="preload" href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700;900&display=swap"
+    as="style" onload="this.onload=null;this.rel='stylesheet'">
+  <noscript>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700;900&display=swap">
+  </noscript>
+  <!-- import da fonte de ícones material icons -->
+  <link href="https://fonts.googleapis.com/css?family=Material+Icons|Material+Icons+Round&display=swap"
+    rel="stylesheet">
+  <!-- titulo da página -->
+  <title>Catálogo - Argamassa Rei PDV</title>
+  <!-- favicon -->
+  <link rel="shortcut icon" href="img/favicon.svg" type="image/x-icon">
+  <!-- estilos -->
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="css/catalogo.css">
+  <!--Script-->
+  <script src="/js/newItems.js" defer></script>
+  <script src="/js/menuExpanded.js" defer></script>
+</head>
+
+<body>
+
+  <div class="black-screen" onclick="closeModal()"></div>
+
+  <header class="header bg-white">
+    <!--inicio do header-->
+    <div class="header-container">
+      <!--inicio do header container-->
+
+      <div class="title-container">
+        <!--inicio do title container-->
+        <div class="title no-desktop">
+          <h1 class="h4 primary-color">Catálogo</h1>
+          <!--title text-->
+        </div>
+        <!--fim do title-->
+
+        <div class="title only-desktop">
+          <h1 class="h4 primary-color">Argamassa Rei</h1>
+          <!--title text-->
+          <div class="tag bg-primary-2">
+            <!--tag-->
+            <p class="body bold secondary-color">PDV</p>
+          </div>
+          <!--fim da tag-->
+        </div>
+
+      </div>
+      <!--fim do title container-->
+
+      <button class="icon-button no-desktop">
+        <span class="material-icons-round primary-color">search</span>
+      </button>
+
+      <nav class="nav desktop-nav">
+        <!--inicio da nav-->
+        <div class="nav-container">
+          <!--inicio do nav container-->
+          <ul>
+            <li>
+              <!--Home-->
+              <a href="home.html" name="0" class="">
+                <span class="material-icons-round">home</span>
+                <p>Home</p>
+              </a>
+            </li>
+            <li>
+              <!--Catálogo-->
+              <a href="catalogo.html" name="1" class="active">
+                <span class="material-icons-round">dashboard</span>
+                <p>Catálogo</p>
+              </a>
+            </li>
+            <li>
+              <!--Clientes-->
+              <a href="clientes.html" name="2" class="">
+                <span class="material-icons-round">person_pin</span>
+                <p>Clientes</p>
+              </a>
+            </li>
+            <li>
+              <!--Perfil-->
+              <a href="perfil.html" name="3" class="">
+                <span class="material-icons-round">person</span>
+                <p>Perfil</p>
+              </a>
+            </li>
+          </ul>
+        </div>
+        <!--fim do nav container-->
+      </nav>
+      <!--fim da nav-->
+
+    </div>
+    <!--fim do header container-->
+
+    <div class="catalogo-nav no-desktop">
+      <!--inicio da navegação interior do catalogo-->
+      <ul>
+        <li><a href="catalogo.html?argamassas" class="active">Argamassas</a></li>
+        <li><a href="catalogo.html?tintas">Tintas</a></li>
+        <li><a href="catalogo.html?rebocos">Rebocos</a></li>
+        <li><a href="catalogo.html?acabamentos">Acabamentos</a></li>
+      </ul>
+    </div>
+    <!--fim da navegação interior do catalogo-->
+
+  </header>
+  <!--fim do header-->
+
+  <div class="content-container bg-2">
+    <!--área de conteúdos-->
+
+    <!-- Sidebar ----------->
+    <section class="sidebar only-desktop">
+
+      <!-- title -->
+      <h2 class="title h5">Catálogo</h2>
+      <!-- fim do title -->
+
+      <!-- Search bar----------->
+      <div class="search-bar mb-16">
+        <button class="icon-button">
+          <span class="material-icons-round medium-color">search</span>
+        </button>
+        <input type="text" class="medium-color body-2" placeholder="Procurando um cliente?">
+      </div>
+      <!-- Fim da search bar ----------->
+
+      <!--card de listas-->
+      <div id='catalogCategories' class="card list-card mb-16 black-color">
+        <!--item da lista-->
+        <a href="#" class="catalog-list black-color">
+          <p class="body-2">Argamassas</p>
+          <p class="caption low-color">6 produtos</p>
+        </a>
+        <!--item da lista-->
+        <a href="#" class="catalog-list black-color">
+          <p class="body-2">Tintas</p>
+          <p class="caption low-color">6 produtos</p>
+        </a>
+        <!--item da lista-->
+        <a href="#" class="catalog-list black-color">
+          <p class="body-2">Reforma e acabamento</p>
+          <p class="caption low-color">6 produtos</p>
+        </a>
+        <!--item da lista-->
+        <a href="#" class="catalog-list black-color">
+          <p class="body-2">Material de campo</p>
+          <p class="caption low-color">6 produtos</p>
+        </a>
+        <!--new Item-->
+
+      </div>
+      <!--fim do card de listas-->
+
+      <!--Nova categoria-->
+      <div class="newItemContainer mb-16 black-color">
+        <a href="#" id='newCategory' class="catalog-list black-color">
+          <span class="material-icons-round primary-color">add_circle_outline</span>
+          <p class="body-2">Nova categoria</p>
+        </a>
+      </div>
+
+    </section>
+    <!-- Fim da sidebar -------------->
+
+    <section class="catalog-desktop only-desktop">
+      <!-- Categoria de produto------------->
+      <article>
+        
+        <h3 class="h5 medium-color">Argamassas</h3>
+
+        <div class="product-container">
+
+          <!-- card de produto-->
+          <div class="product-card mb-8" onclick="openModal()">
+            <div class="image-area">
+              <p class="low-color">imagem</p>
+            </div>
+
+            <div class="product-content">
+              <div class="text-container">
+                <div class="line-one">
+                  <p class="body-3 black-color">argamassa rei acl</p>
+                </div>
+                <div class="line-two body-2 medium-color">
+                  <p>saco</p>
+                  <p>‣</p>
+                  <p>20kg</p>
+                </div>
+              </div>
+              <div class="price-container">
+                <p class="body-3 primary-color">R$ 5,45</p>
+                <p class="body-2 medium-color line-through">R$ 6,70</p>
+              </div>
+            </div>
+          </div>
+
+          <!-- card de produto-->
+          <div class="product-card mb-8" onclick="openModal()">
+            <div class="image-area">
+              <p class="low-color">imagem</p>
+            </div>
+
+            <div class="product-content">
+              <div class="text-container">
+                <div class="line-one">
+                  <p class="body-3 black-color">argamassa rei acl</p>
+                </div>
+                <div class="line-two body-2 medium-color">
+                  <p>saco</p>
+                  <p>‣</p>
+                  <p>20kg</p>
+                </div>
+              </div>
+              <div class="price-container">
+                <p class="body-3 primary-color">R$ 5,45</p>
+                <p class="body-2 medium-color line-through">R$ 6,70</p>
+              </div>
+            </div>
+          </div>
+
+          <!-- card de produto-->
+          <div class="product-card mb-8" onclick="openModal()">
+            <div class="image-area">
+              <p class="low-color">imagem</p>
+            </div>
+
+            <div class="product-content">
+              <div class="text-container">
+                <div class="line-one">
+                  <p class="body-3 black-color">argamassa rei acl</p>
+                </div>
+                <div class="line-two body-2 medium-color">
+                  <p>saco</p>
+                  <p>‣</p>
+                  <p>20kg</p>
+                </div>
+              </div>
+              <div class="price-container">
+                <p class="body-3 primary-color">R$ 5,45</p>
+                <p class="body-2 medium-color line-through">R$ 6,70</p>
+              </div>
+            </div>
+          </div>
+
+          <!-- card de produto-->
+          <div class="product-card mb-8" onclick="openModal()">
+            <div class="image-area">
+              <p class="low-color">imagem</p>
+            </div>
+            <div class="product-content">
+              <div class="text-container">
+                <div class="line-one">
+                  <p class="body-3 black-color">argamassa rei acl</p>
+                </div>
+                <div class="line-two body-2 medium-color">
+                  <p>saco</p>
+                  <p>‣</p>
+                  <p>20kg</p>
+                </div>
+              </div>
+              <div class="price-container">
+                <p class="body-3 primary-color">R$ 5,45</p>
+                <p class="body-2 medium-color line-through">R$ 6,70</p>
+              </div>
+            </div>
+          </div>
+
+           <!-- card de produto-->
+           <div class="product-card mb-8" onclick="openModal()">
+            <div class="image-area">
+              <p class="low-color">imagem</p>
+            </div>
+
+            <div class="product-content">
+              <div class="text-container">
+                <div class="line-one">
+                  <p class="body-3 black-color">argamassa rei acl</p>
+                </div>
+                <div class="line-two body-2 medium-color">
+                  <p>saco</p>
+                  <p>‣</p>
+                  <p>20kg</p>
+                </div>
+              </div>
+              <div class="price-container">
+                <p class="body-3 primary-color">R$ 5,45</p>
+                <p class="body-2 medium-color line-through">R$ 6,70</p>
+              </div>
+            </div>
+          </div>
+
+           <!-- card de produto-->
+           <div class="product-card mb-8" onclick="openModal()">
+            <div class="image-area">
+              <p class="low-color">imagem</p>
+            </div>
+
+            <div class="product-content">
+              <div class="text-container">
+                <div class="line-one">
+                  <p class="body-3 black-color">argamassa rei acl</p>
+                </div>
+                <div class="line-two body-2 medium-color">
+                  <p>saco</p>
+                  <p>‣</p>
+                  <p>20kg</p>
+                </div>
+              </div>
+              <div class="price-container">
+                <p class="body-3 primary-color">R$ 5,45</p>
+                <p class="body-2 medium-color line-through">R$ 6,70</p>
+              </div>
+            </div>
+          </div>
+
+          <!-- card de novo produto-->
+          <div class="product-card newItemContainer centralized mb-8" onclick="openModalNewItem()">
+            <span class="material-icons-round fontSize72 medium-color">add_circle_outline</span>
+            <p class="body-3 mt-8 medium-color">Novo produto</p>
+          </div>
+
+        </div>
+
+      </article>
+    </section>
+
+    <section class="catalog-desktop no-desktop">
+      <!-- Categoria de produto------------->
+      <div class="chip-group mb-16 display-none">
+        <ul>
+          <li><a href="#" class="active">3,6 litros</a></li>
+          <li><a href="#">3,6 litros</a></li>
+          <li><a href="#">3,6 litros</a></li>
+        </ul>
+      </div>
+
+      <div class="product-card-mobile mb-8" onclick="openModal()">
+        <div class="image-area">
+          <p class="low-color">imagem</p>
+        </div>
+
+        <div class="product-content">
+          <div class="text-container">
+            <div class="line-one">
+              <p class="body-3 black-color">argamassa rei acl</p>
+            </div>
+            <div class="line-two body-2 medium-color">
+              <p>saco</p>
+              <p>‣</p>
+              <p>20kg</p>
+            </div>
+          </div>
+          <div class="price-container">
+            <p class="body-3 primary-color">R$ 5,45</p>
+            <p class="body-2 medium-color line-through">R$ 6,70</p>
+          </div>
+        </div>
+      </div>
+
+      <div class="product-card-mobile mb-8" onclick="openModal()">
+        <div class="image-area">
+          <p class="low-color">imagem</p>
+        </div>
+
+        <div class="product-content">
+          <div class="text-container">
+            <div class="line-one">
+              <p class="body-3 black-color">argamassa rei acl</p>
+            </div>
+            <div class="line-two body-2 medium-color">
+              <p>saco</p>
+              <p>‣</p>
+              <p>20kg</p>
+            </div>
+          </div>
+          <div class="price-container">
+            <p class="body-3 primary-color">R$ 5,45</p>
+            <p class="body-2 medium-color line-through">R$ 6,70</p>
+          </div>
+        </div>
+      </div>
+
+      <!-- fim da categoria de produto------------->
+    </section>
+
+    <div class="clear"></div>
+    <!--cards de produtos-->
+  </div>
+  <!--fim da área principal do catalogo content-->
+
+  <div class="modal elevation24dp">
+
+    <button class="icon-button" onclick="closeModal()">
+      <span class="material-icons-round medium-color">close</span>
+    </button>
+    <div class="image-area">
+      <p class="low-color">imagem</p>
+    </div>
+    <div class="mt-16">
+      <p class="body-2 medium black">nome do produto</p>
+      <p class="body-2 medium medium-color">R$ 5,00</p>
+      <div class="product-info center-items-horizontal medium-color">
+        <p>Saco</p>
+        <span>‣</span>
+        <p>20kg</p>
+      </div>
+    </div>
+    <p class="body medium-color mt-16">
+      Argamassa ACI é indicada para aplicações internas, em pisos de alvenaria, ela tem ótima resistência e
+      durabilidade, melhor opção para a sua obra.
+    </p>
+
+  </div>
+
+  <div class="modalNewItem elevation24dp">
+
+    <button class="icon-button" onclick="closeModalNewItem()">
+      <span class="material-icons-round medium-color">close</span>
+    </button>
+
+    <h3 class="h5 medium-color">Argamassas</h3>
+
+    <div class="image-area">
+      <span class="material-icons-round primary-color">photo_library</span>
+      <p class="button primary-color">Adicionar imagem</p>
+    </div>
+
+    <div>
+
+      <div class="forms active mb-8">
+        <!--input-->
+        <input type="text" class="bg-white medium-color" name="login" autocomplete="off" required>
+        <label for="login" class="label-name">
+          <span class="content-name body">Nome do produto</span>
+        </label>
+      </div>
+      <!--fim do input-->
+
+      <div class="forms active mb-8">
+        <!--input-->
+        <input type="text" class="bg-white medium-color" name="login" autocomplete="off" required>
+        <label for="login" class="label-name">
+          <span class="content-name body">Valor do produto</span>
+        </label>
+      </div>
+      <!--fim do input-->
+
+      <div class="inputData mb-16">
+        <p class="body rolinha">Embalagem</p>
+        <button id="abobora" class="icon-button material-icons-round menuActivator">expand_more</button>
+        <div class="statusMenu display-none">
+          <p class="body">Saco</p>
+          <p class="body">Garrafa</p>
+          <p class="body">Balde</p>
+        </div>
+      </div>
+
+      <div class="duoInputLine">
+        <div class="forms active mb-8">
+          <!--input-->
+          <input type="text" class="bg-white medium-color" name="login" autocomplete="off" required>
+          <label for="login" class="label-name">
+            <span class="content-name body">Quantidade</span>
+          </label>
+        </div>
+        <!--fim do input-->
+        <div class="inputData mb-16">
+          <p class="body">Unidade</p>
+          <button class="icon-button material-icons-round menuActivator">expand_more</button>
+          <div class="statusMenu display-none">
+            <p class="body">Quilogramas</p>
+            <p class="body">Litros</p>
+          </div>
+        </div>
+      </div>
+
+       <div class="forms active mb-8">
+          <!--input-->
+          <input type="text" class="bg-white medium-color" name="login" autocomplete="off" required>
+          <label for="login" class="label-name">
+            <span class="content-name body">Descrição do produto</span>
+          </label>
+        </div>
+        <!--fim do input-->
+
+    </div>
+
+    <a href="#" class="button display-flex align-center justify-center bg-primary white-color mt-16">
+      Adicionar Produto
+    </a>
+
+  </div>
+
+  </div>
+  <!--fim da área de conteúdos-->
+
+
+  <nav class="nav">
+    <!--inicio da nav-->
+    <div class="nav-container bg-primary">
+      <!--inicio do nav container-->
+      <ul>
+        <li>
+          <!--Home-->
+          <a href="home.html">
+            <span class="material-icons-round">home</span>
+            <p>Home</p>
+          </a>
+        </li>
+        <li>
+          <!--Catálogo-->
+          <a href="catalogo.html" class="active">
+            <span class="material-icons-round">dashboard</span>
+            <p>Catálogo</p>
+          </a>
+        </li>
+        <li>
+          <!--Clientes-->
+          <a href="clientes.html">
+            <span class="material-icons-round">person_pin</span>
+            <p>Clientes</p>
+          </a>
+        </li>
+        <li>
+          <!--Perfil-->
+          <a href="perfil.html">
+            <span class="material-icons-round">person</span>
+            <p>Perfil</p>
+          </a>
+        </li>
+      </ul>
+    </div>
+    <!--fim do nav container-->
+  </nav>
+
+  <script>
+    
+    function openModal() {
+      document.querySelector('.modal').classList.add('open');
+      document.querySelector('.black-screen').classList.add('fade-in');
+    }
+    function closeModal() {
+      document.querySelector('.modal').classList.remove('open');
+      document.querySelector('.black-screen').classList.remove('fade-in');
+      document.querySelector('.black-screen').classList.add('fade-out');
+      setTimeout(() => {
+        document.querySelector('.black-screen').classList.remove('fade-out');
+      }, 400);
+    }
+
+    function openModalNewItem() {
+      document.querySelector('.modalNewItem').classList.add('open');
+      document.querySelector('.black-screen').classList.add('fade-in');
+    }
+    function closeModalNewItem() {
+      document.querySelector('.modalNewItem').classList.remove('open');
+      document.querySelector('.black-screen').classList.remove('fade-in');
+      document.querySelector('.black-screen').classList.add('fade-out');
+      setTimeout(() => {
+        document.querySelector('.black-screen').classList.remove('fade-out');
+      }, 400);
+    }
+
+  </script>
+
+</body>
+
+</html>
